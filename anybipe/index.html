@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +26,7 @@
 
 
   <title>AnyBipe: An End-to-End Framework for Training and Deploying Bipedal Robots Guided by Large Language Models</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+<!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -59,7 +60,7 @@
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yifei Yao</a><sup>*</sup>,</span>
 
                 <span class="author-block">
-                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du</a>
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du</a>*</sup>,
                 </span>
                 <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chengyu Gu</a><sup>*</sup>,</span>
@@ -133,18 +134,19 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <video poster="" id="tree" autoplay controls muted loop height="100%">
+                <!-- Your video here -->
+                <source src="static/videos/banner_video.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+                AAAAAAAliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus
+                at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut
+                maximus.
+            </h2>
+        </div>
     </div>
-  </div>
 </section>
 <!-- End teaser video -->
 
@@ -164,6 +166,110 @@ Training and deploying reinforcement learning (RL) policies for robots, especial
   </div>
 </section>
 <!-- End paper abstract -->
+
+
+<!-- Long text section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="content">
+        <h2 class="subtitle has-text-centered">
+          Title of the Section
+        </h2>
+        <p class="has-text-justified">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ac odio bibendum gravida. Vestibulum imperdiet tincidunt mi, eget vulputate augue cursus id. Vivamus at nisi sit amet turpis cursus varius a ut orci. Suspendisse potenti. Integer nec scelerisque ipsum. Nullam ut magna leo. Cras laoreet, felis id vehicula scelerisque, nulla arcu gravida urna, nec tempus nunc magna nec elit. Phasellus tincidunt ante ac velit finibus, non venenatis erat suscipit. Sed eu justo erat. Proin accumsan velit non mi ultrices feugiat. Aliquam erat volutpat. Sed at enim a velit consequat hendrerit. Aenean ac arcu sit amet lectus vehicula pretium ac a nunc. Nam varius velit sit amet nisl varius, a dictum nulla placerat.
+        </p>
+        <p class="has-text-justified">
+          Mauris luctus malesuada lectus vel pharetra. Ut luctus consequat justo, at scelerisque nisi dignissim vel. In non magna vitae orci malesuada gravida. Sed pharetra nec erat id laoreet. Suspendisse ultricies dapibus diam, non congue erat faucibus a. Duis fermentum malesuada felis vel dictum. Integer nec sodales nunc. Aenean sit amet lectus et ligula iaculis dignissim ac non quam. Donec tincidunt orci risus, at tincidunt felis scelerisque nec.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End long text section -->
+
+<!-- Code block with horizontal scrolling -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="code-block-carousel" class="carousel code-carousel">
+        <div class="item">
+          <pre class="code-block">
+<code>
+// First code snippet1
+function greet() {
+    console.log("Hello, World!");
+}
+greet();
+</code>
+          </pre>
+        </div>
+        <div class="item">
+          <pre class="code-block">
+<code>
+// Second code snippet
+let array = [1, 2, 3, 4, 5];
+array.forEach(item => console.log(item));
+</code>
+          </pre>
+        </div>
+        <div class="item">
+          <pre class="code-block">
+<code>
+// Third code snippet
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    introduce() {
+        console.log(`My name is ${this.name} and I am ${this.age} years old.`);
+    }
+}
+const person = new Person("Alice", 30);
+person.introduce();
+</code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS to enable scrolling and code formatting -->
+<style>
+  .code-block {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: pre-wrap; /* Prevent code from breaking lines */
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+
+  .code-block code {
+    display: block;
+    white-space: pre; /* Preserve formatting */
+  }
+
+  /* Optional: Carousel styling (if using a carousel) */
+  /* .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  } */
+
+  .item {
+    min-width: 100%; /* Adjust based on your layout */
+    scroll-snap-align: center;
+    margin-right: 1rem;
+  }
+</style>
+
+
 
 
 <!-- Image carousel -->
