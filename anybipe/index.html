@@ -44,6 +44,9 @@
     <script src="static/js/bulma-slider.min.js"></script>
     <script src="static/js/index.js"></script>
 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
     <!-- Include Prism.js stylesheet for syntax highlighting -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -372,6 +375,59 @@
         <div class="hero-body">
             <div class="container">
                 <div class="content">
+                    <p class="has-text-justified">
+
+<h2>Proof of section 3.2</h2>
+
+<p>First, let \( u = \log\delta(x) \), therefore we have \( du = \frac{d}{dx}\log\delta(x) \).</p>
+
+<p>We have KL divergence between normal distribution \( N(\mu_{\theta}, \sigma_{\theta}^2) \) with PDF \( q(x) = \frac{1}{\sqrt{2\pi\sigma_{\theta}^2}}\exp\left(-\frac{(x-\mu_{\theta})^2}{\sigma_{\theta}^2}\right) \), and Dirac distribution with PDF \( p(x) = \delta(x-a_{ref}) \), the KL divergence can be written as</p>
+
+$$
+\begin{aligned}
+\operatorname{KL}(\pi_{\text{ref}}\mid \pi_{\theta}) &= \int_{-\infty}^{\infty}p(x)\log\frac{p(x)}{q(x)}dx\\
+&= \int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx-\int_{-\infty}^{\infty}\delta(x-a_{ref})\log q(x)dx\\
+&= 0 - \log q(a_{ref})\\
+&= \log(\sqrt{2\pi \sigma_{\theta}^2}) + \frac{(a_{ref} - \mu_{\theta})^2}{2\sigma_{\theta}^2}
+\end{aligned}
+$$
+
+<p>We first prove that \( \int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx = 0 \). Let \( u = \log\delta(x) \), \( v = \int \delta(x)dx = 1 \), we have</p>
+
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx &= \int_{-\infty}^{\infty}udv \\
+&= uv - \int_{-\infty}^{\infty}vdu \\
+&= u - \int_{-\infty}^{\infty}du \\
+&= 0
+\end{aligned}
+$$
+
+<p>Then we show why we don't calculate the normal KL divergence \( \operatorname{KL}(\pi_{\theta}\mid \pi_{\text{ref}}) \). This is because the term</p>
+
+$$
+\int_{-\infty}^{\infty}p(x)\log\delta(x)dx
+$$
+
+<p>is too difficult to calculate. Since the backward propagation functions normally, we choose the inverse form, which still measures the difference between two distributions.</p>
+
+<p>Also, in practice, we tend to ignore the term which controls the size of \( \sigma_{\theta} \), using this term directly instead:</p>
+
+$$
+L_{dist} =\sum_{i=1}^N\frac{(a_{ref} - \mu_{\theta,i})^2}{2\sigma_{\theta,i}^2}
+$$
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Proof 3.2 -->
+
+
+    <!-- Long text section -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
                     <h2 class="subtitle has-text-centered">
                         Title of the Section
                     </h2>
@@ -437,6 +493,10 @@
     </section>
     <!-- End long text section -->
 
+
+
+
+
     <!-- Homomorphic Reward Function Conversation Procedure -->
     <section class="hero is-small">
         <div class="hero-body">
@@ -455,6 +515,10 @@
             </div>
         </div>
     </section>
+
+
+
+
 
     <div class="no-bulma">
         <div class="container">
