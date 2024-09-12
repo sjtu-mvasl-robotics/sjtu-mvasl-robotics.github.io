@@ -1,132 +1,189 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>AnyBipe: An End-to-End Framework for Training and Deploying Bipedal Robots Guided by Large Language Models</title>
-<!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+    <title>AnyBipe: An End-to-End Framework for Training and Deploying Bipedal Robots Guided by Large Language Models
+    </title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-
-
-<!-- CSS to enable scrolling and code formatting -->
-<style>
-  .code-block {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    border-radius: 8px;
-    max-width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: pre-wrap; /* Prevent code from breaking lines */
-    font-family: monospace;
-    font-size: 14px;
-    border: 1px solid #ddd;
-  }
-
-  .code-block code {
-    display: block;
-    white-space: pre; /* Preserve formatting */
-  }
-
-  /* Optional: Carousel styling (if using a carousel) */
-  /* .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  } */
-
-  .item {
-    min-width: 100%; /* Adjust based on your layout */
-    scroll-snap-align: center;
-    margin-right: 1rem;
-  }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
 
 
-</style>
+    <!-- Include Prism.js stylesheet for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <!-- CSS to enable scrolling and code formatting -->
+    <style>
+        .no-bulma .number {
+            background-color: transparent !important;
+            border-radius: 0 !important;
+            display: inline !important;
+            font-size: inherit !important;
+            padding: 0 !important;
+            margin-right: 0 !important;
+        }
 
+        .code-block {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            max-width: 100%;
+            overflow-x: auto;
+            /* Enable horizontal scrolling */
+            white-space: pre-wrap;
+            /* Prevent code from breaking lines */
+            font-family: monospace;
+            font-size: 14px;
+            border: 1px solid #ddd;
+        }
+
+        .code-block code {
+            display: block;
+            white-space: pre;
+            /* Preserve formatting */
+        }
+
+        /* Optional: Carousel styling (if using a carousel) */
+        /* .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      } */
+
+        .item {
+            min-width: 100%;
+            /* Adjust based on your layout */
+            scroll-snap-align: center;
+            margin-right: 1rem;
+        }
+
+
+        */ .column {
+            width: 48%;
+            /* Narrower columns for a more compact layout */
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Hide code blocks initially */
+        #codeBlockA,
+        #codeBlockB {
+            display: none;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            /* Default button background color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            /* Background color when hovering */
+        }
+
+        /* Disable the example_realworld_reward.py button when example_original_reward.py is not open */
+        #toggleButtonB:disabled {
+            background-color: #cccccc;
+            /* Disabled button background color */
+            cursor: not-allowed;
+            /* Change cursor for disabled button */
+        }
+    </style>
 </head>
+
 <body>
 
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">AnyBipe: An End-to-End Framework for Training and Deploying Bipedal Robots Guided by Large Language Models </h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yifei Yao</a>,</span>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">AnyBipe: An End-to-End Framework for Training and
+                            Deploying Bipedal Robots Guided by Large Language Models </h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yifei Yao</a>,</span>
 
-                <span class="author-block">
-                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du</a>,
-                </span>
-                <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chengyu Gu</a>,</span>
-                <span class="author-block">
-                    <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Wentao He</a>
-                </span>
-                  </div>
+                            <span class="author-block">
+                                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du</a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chengyu Gu</a>,</span>
+                            <span class="author-block">
+                                <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Wentao He</a>
+                            </span>
+                        </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Institution Name<br>Conferance name and year</span>
+                            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                        </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Arxiv PDF link -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
 
-                    <!-- Supplementary PDF link -->
-<!-- 
+                                <!-- Supplementary PDF link -->
+                                <!-- 
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -138,111 +195,128 @@
                   </span>
 -->
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/sjtu-mvasl-robotics/AnyBipe" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/sjtu-mvasl-robotics/AnyBipe" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                                <!-- ArXiv abstract Link -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
 
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-    <div class="container is-max-desktop">
+    <!-- Teaser video-->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                    <!-- Your video here -->
+                    <source src="static/videos/banner_video.mp4" type="video/mp4">
+                </video>
+                <h2 class="subtitle has-text-centered">
+                    AAAAAAAliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel
+                    lectus
+                    at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut
+                    maximus.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Training and deploying reinforcement learning (RL) policies for robots, especially in
+                            accomplishing specific tasks, presents substantial challenges. Recent advancements have
+                            explored diverse reward function designs, training techniques, simulation-to-reality
+                            (sim-to-real) transfers, and performance analysis methodologies, yet these still require
+                            significant human intervention. This paper introduces an end-to-end framework for training
+                            and deploying RL policies, guided by Large Language Models (LLMs), and evaluates its
+                            effectiveness on bipedal robots. The framework consists of three interconnected modules: an
+                            LLM-guided reward function design module, an RL training module leveraging prior work, and a
+                            sim-to-real homomorphic evaluation module. This design significantly reduces the need for
+                            human input by utilizing only essential simulation and deployment platforms, with the option
+                            to incorporate human-engineered strategies and historical data. We detail the construction
+                            of these modules, their advantages over traditional approaches, and demonstrate the
+                            framework's capability to autonomously develop and refine controlling strategies for bipedal
+                            robot locomotion, showcasing its potential to operate independently of human intervention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+
+
+    <!-- Pipeline Start -->
+    <section class="hero is-small">
         <div class="hero-body">
-            <video poster="" id="tree" autoplay controls muted loop height="100%">
-                <!-- Your video here -->
-                <source src="static/videos/banner_video.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">
-                AAAAAAAliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus
-                at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut
-                maximus.
-            </h2>
+            <div class="container">
+                <div class="item">
+
+                    <div class="content">
+                        <h2 class="subtitle has-text-centered">
+                            Anybipe Components
+                        </h2>
+                    </div>
+
+                    <!-- Your image here -->
+                    <img src="static/images/pipeline.png" alt="MY ALT TEXT" />
+                    <!-- <iframe src="static/images/pipeline.pdf" width="600" height="400"></iframe> -->
+                    <b>Overview</b>. The frameworks of Anybipe are organized in three interconnected modules. After
+                    receiving all
+                    pre-requisites and requirements, the
+                    framework generates reward funvion via LLM, train it in simulation and evaluates in both gazebo and
+                    reality,
+                    providing
+                    important feedback. The whole procedure requires minimum human labor.
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-Training and deploying reinforcement learning (RL) policies for robots, especially in accomplishing specific tasks, presents substantial challenges. Recent advancements have explored diverse reward function designs, training techniques, simulation-to-reality (sim-to-real) transfers, and performance analysis methodologies, yet these still require significant human intervention. This paper introduces an end-to-end framework for training and deploying RL policies, guided by Large Language Models (LLMs), and evaluates its effectiveness on bipedal robots. The framework consists of three interconnected modules: an LLM-guided reward function design module, an RL training module leveraging prior work, and a sim-to-real homomorphic evaluation module. This design significantly reduces the need for human input by utilizing only essential simulation and deployment platforms, with the option to incorporate human-engineered strategies and historical data. We detail the construction of these modules, their advantages over traditional approaches, and demonstrate the framework's capability to autonomously develop and refine controlling strategies for bipedal robot locomotion, showcasing its potential to operate independently of human intervention.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-
-
-<!-- Pipeline Start -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-     <div class="item">
-
-    <div class="content">
-        <h2 class="subtitle has-text-centered">
-            Anybipe Components
-        </h2>
-    </div>
-
-        <!-- Your image here -->
-        <img src="static/images/pipeline.png" alt="MY ALT TEXT" />
-        <!-- <iframe src="static/images/pipeline.pdf" width="600" height="400"></iframe> -->
-        <b>Overview</b>. The frameworks of Anybipe are organized in three interconnected modules. After receiving all
-        pre-requisites and requirements, the
-        framework generates reward funvion via LLM, train it in simulation and evaluates in both gazebo and reality,
-        providing
-        important feedback. The whole procedure requires minimum human labor.
-    </div>
-    </div>
-    </div>
     </section>
 
 
     <div class="content">
-        <h1 class="subtitle"  style="text-align: left; padding-left: 60px;" >
+        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
+            <br>
             Module 1: LLM Reward Function Generation
         </h1>
     </div>
 
 
-    
+
     <!-- Long text section -->
     <section class="hero is-small">
         <div class="hero-body">
@@ -251,23 +325,74 @@ Training and deploying reinforcement learning (RL) policies for robots, especial
                     <h2 class="subtitle has-text-centered">
                         Title of the Section
                     </h2>
-        <p class="has-text-justified">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ac odio bibendum gravida. Vestibulum imperdiet tincidunt mi, eget vulputate augue cursus id. Vivamus at nisi sit amet turpis cursus varius a ut orci. Suspendisse potenti. Integer nec scelerisque ipsum. Nullam ut magna leo. Cras laoreet, felis id vehicula scelerisque, nulla arcu gravida urna, nec tempus nunc magna nec elit. Phasellus tincidunt ante ac velit finibus, non venenatis erat suscipit. Sed eu justo erat. Proin accumsan velit non mi ultrices feugiat. Aliquam erat volutpat. Sed at enim a velit consequat hendrerit. Aenean ac arcu sit amet lectus vehicula pretium ac a nunc. Nam varius velit sit amet nisl varius, a dictum nulla placerat.
-        </p>
-        <p class="has-text-justified">
-          Mauris luctus malesuada lectus vel pharetra. Ut luctus consequat justo, at scelerisque nisi dignissim vel. In non magna vitae orci malesuada gravida. Sed pharetra nec erat id laoreet. Suspendisse ultricies dapibus diam, non congue erat faucibus a. Duis fermentum malesuada felis vel dictum. Integer nec sodales nunc. Aenean sit amet lectus et ligula iaculis dignissim ac non quam. Donec tincidunt orci risus, at tincidunt felis scelerisque nec.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End long text section -->
-
+                    <p class="has-text-justified">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ac odio bibendum
+                        gravida. Vestibulum imperdiet tincidunt mi, eget vulputate augue cursus id. Vivamus at nisi sit
+                        amet turpis cursus varius a ut orci. Suspendisse potenti. Integer nec scelerisque ipsum. Nullam
+                        ut magna leo. Cras laoreet, felis id vehicula scelerisque, nulla arcu gravida urna, nec tempus
+                        nunc magna nec elit. Phasellus tincidunt ante ac velit finibus, non venenatis erat suscipit. Sed
+                        eu justo erat. Proin accumsan velit non mi ultrices feugiat. Aliquam erat volutpat. Sed at enim
+                        a velit consequat hendrerit. Aenean ac arcu sit amet lectus vehicula pretium ac a nunc. Nam
+                        varius velit sit amet nisl varius, a dictum nulla placerat.
+                    </p>
+                    <p class="has-text-justified">
+                        Mauris luctus malesuada lectus vel pharetra. Ut luctus consequat justo, at scelerisque nisi
+                        dignissim vel. In non magna vitae orci malesuada gravida. Sed pharetra nec erat id laoreet.
+                        Suspendisse ultricies dapibus diam, non congue erat faucibus a. Duis fermentum malesuada felis
+                        vel dictum. Integer nec sodales nunc. Aenean sit amet lectus et ligula iaculis dignissim ac non
+                        quam. Donec tincidunt orci risus, at tincidunt felis scelerisque nec.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End long text section -->
 
 
 
     <div class="content">
-        <h1 class="subtitle"  style="text-align: left; padding-left: 60px;" >
+        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
+            <br>
+            Module 2: Teacher Guided PPO Training
+        </h1>
+    </div>
+
+
+
+    <!-- Long text section -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
+                    <h2 class="subtitle has-text-centered">
+                        Title of the Section
+                    </h2>
+                    <p class="has-text-justified">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ac odio bibendum
+                        gravida. Vestibulum imperdiet tincidunt mi, eget vulputate augue cursus id. Vivamus at nisi sit
+                        amet turpis cursus varius a ut orci. Suspendisse potenti. Integer nec scelerisque ipsum. Nullam
+                        ut magna leo. Cras laoreet, felis id vehicula scelerisque, nulla arcu gravida urna, nec tempus
+                        nunc magna nec elit. Phasellus tincidunt ante ac velit finibus, non venenatis erat suscipit. Sed
+                        eu justo erat. Proin accumsan velit non mi ultrices feugiat. Aliquam erat volutpat. Sed at enim
+                        a velit consequat hendrerit. Aenean ac arcu sit amet lectus vehicula pretium ac a nunc. Nam
+                        varius velit sit amet nisl varius, a dictum nulla placerat.
+                    </p>
+                    <p class="has-text-justified">
+                        Mauris luctus malesuada lectus vel pharetra. Ut luctus consequat justo, at scelerisque nisi
+                        dignissim vel. In non magna vitae orci malesuada gravida. Sed pharetra nec erat id laoreet.
+                        Suspendisse ultricies dapibus diam, non congue erat faucibus a. Duis fermentum malesuada felis
+                        vel dictum. Integer nec sodales nunc. Aenean sit amet lectus et ligula iaculis dignissim ac non
+                        quam. Donec tincidunt orci risus, at tincidunt felis scelerisque nec.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End long text section -->
+
+    <div class="content">
+        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
+            <br>
             Module 3: Deploy, Evaluation, and Feedback
         </h1>
     </div>
@@ -278,57 +403,140 @@ Training and deploying reinforcement learning (RL) policies for robots, especial
         <div class="hero-body">
             <div class="container">
                 <div class="content">
-        <p class="has-text-justified">
-In module 3 we optimize bipedal robot reinforcement learning strategies, implement state estimators, and
-align evaluations with reward functions. To avoid ineffective rewards, basic training metrics (such as command
-compliance and survival time) are used to filter samples, and custom observation metrics can be defined for specific
-tasks. The top 15% of strategies are then selected for real-world deployment.
+                    <p class="has-text-justified">
+                        In module 3 we optimize bipedal robot reinforcement learning strategies, implement state
+                        estimators, and
+                        align evaluations with reward functions. To avoid ineffective rewards, basic training metrics
+                        (such as command
+                        compliance and survival time) are used to filter samples, and custom observation metrics can be
+                        defined for specific
+                        tasks. The top 15% of strategies are then selected for real-world deployment.
 
-The training and real environments are considered isomorphic, with a mapping function ensuring that real-world
-evaluations reflect the reward function. Models are first tested in a simulation environment for safety and stability,
-and only the best-performing models are tested in real-world conditions, with optimal strategies selected based on
-performance in both environments.
+                        The training and real environments are considered isomorphic, with a mapping function ensuring
+                        that real-world
+                        evaluations reflect the reward function. Models are first tested in a simulation environment for
+                        safety and stability,
+                        and only the best-performing models are tested in real-world conditions, with optimal strategies
+                        selected based on
+                        performance in both environments.
 
-The system automates the process from reward generation to training, deployment, and optimization, allowing users to
-train bipedal robots without pre-existing strategies.
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End long text section -->
+                        The system automates the process from reward generation to training, deployment, and
+                        optimization, allowing users to
+                        train bipedal robots without pre-existing strategies.
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End long text section -->
 
-<!-- Homomorphic Reward Function Conversation Procedure -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-     <div class="item">
+    <!-- Homomorphic Reward Function Conversation Procedure -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="item">
 
-    <div class="content">
-        <h2 class="subtitle has-text-centered">
-            Reward Function Conversion
-        </h2>
-    </div>
+                    <div class="content">
+                        <h2 class="subtitle has-text-centered">
+                            Reward Function Conversion
+                        </h2>
+                    </div>
 
-        <!-- Your image here -->
-    <img src="static/images/homomorphic_conv.png" alt="MY ALT TEXT" />
-    </div>
-    </div>
-    </div>
+                    <!-- Your image here -->
+                    <img src="static/images/homomorphic_conv.png" alt="MY ALT TEXT" />
+                </div>
+            </div>
+        </div>
     </section>
 
-<!-- Code block with horizontal scrolling -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
+    <div class="no-bulma">
+        <div class="container">
+            <!-- Left column for example_original_reward.py -->
+            <div class="column">
+                <button id="toggleButtonA">Show example_original_reward.py</button>
+                <pre><code id="codeBlockA" class="language-python"></code></pre>
+            </div>
+
+            <!-- Right column for example_realworld_reward.py -->
+            <div class="column">
+                <button id="toggleButtonB" disabled>Show example_realworld_reward.py</button>
+                <!-- Initially disabled -->
+                <pre><code id="codeBlockB" class="language-python"></code></pre>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+
+                <div class="content">
+                    <h2 class="subtitle has-text-centered">
+                        Expreiment Highlights
+                    </h2>
+                </div>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <!-- Your image here -->
+                        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            First image description.
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <!-- Your image here -->
+                        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Second image description.
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <!-- Your image here -->
+                        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Third image description.
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <!-- Your image here -->
+                        <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Fourth image description.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+
 
     <div class="content">
-        <h2 class="subtitle has-text-centered">
-            Code Transformation
-        </h2>
+        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
+            <br>
+            The following are templates to be deleted 
+        </h1>
     </div>
-      <div id="code-block-carousel" class="carousel code-carousel">
-        <div class="item">
-          <pre class="code-block">
+
+    <!-- Code block with horizontal scrolling -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+
+                <div class="content">
+                    <h2 class="subtitle has-text-centered">
+                        Code Transformation
+                    </h2>
+                </div>
+                <div id="code-block-carousel" class="carousel code-carousel">
+                    <div class="item">
+                        <pre class="code-block">
 <code>
 // First code snippet1
 function greet() {
@@ -337,18 +545,18 @@ function greet() {
 greet();
 </code>
           </pre>
-        </div>
-        <div class="item">
-          <pre class="code-block">
+                    </div>
+                    <div class="item">
+                        <pre class="code-block">
 <code>
 // Second code snippet
 let array = [1, 2, 3, 4, 5];
 array.forEach(item => console.log(item));
 </code>
           </pre>
-        </div>
-        <div class="item">
-          <pre class="code-block">
+                    </div>
+                    <div class="item">
+                        <pre class="code-block">
 <code>
 // Third code snippet
 class Person {
@@ -364,246 +572,205 @@ const person = new Person("Alice", 30);
 person.introduce();
 </code>
           </pre>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <!-- Youtube video -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <!-- Paper video. -->
+                <h2 class="title is-3">Video Presentation</h2>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
 
-
-
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-
-    <div class="content">
-        <h2 class="subtitle has-text-centered">
-            Expreiment Highlights
-        </h2>
-    </div>
-    <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+                        <div class="publication-video">
+                            <!-- Youtube embed code here -->
+                            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+    </section>
+    <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+    <!-- Video carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3">Another Carousel</h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-video1">
+                        <video poster="" id="video1" autoplay controls muted loop height="100%">
+                            <!-- Your video file here -->
+                            <source src="static/videos/carousel1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-video2">
+                        <video poster="" id="video2" autoplay controls muted loop height="100%">
+                            <!-- Your video file here -->
+                            <source src="static/videos/carousel2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-video3">
+                        <video poster="" id="video3" autoplay controls muted loop height="100%">\
+                            <!-- Your video file here -->
+                            <source src="static/videos/carousel3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+    </section>
+    <!-- End video carousel -->
+
+
+
+
+
+
+    <!-- Paper poster -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Poster</h2>
+
+                <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+                </iframe>
+
+            </div>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+    </section>
+    <!--End paper poster -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>BibTex Code Here</code></pre>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+    </section>
+    <!--End BibTex citation -->
 
 
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-        <!-- <p>
+                        <!-- <p>
                     This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
                     You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
                     Commons Attribution-ShareAlike 4.0 International License</a>.
                   </p> -->
 
 
-          <p>
-              Website template borrowed from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank"> the Academic Project Page Template</a>, <a href="https://nerfies.github.io" target="_blank">Nerfies</a> , and <a href="https://eureka-research.github.io/" target="_blank">Eureka</a>.
-          </p>
+                        <p>
+                            Website template borrowed from <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">
+                                the Academic Project Page Template</a>, <a href="https://nerfies.github.io"
+                                target="_blank">Nerfies</a> , and <a href="https://eureka-research.github.io/"
+                                target="_blank">Eureka</a>.
+                        </p>
 
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
 
-  </body>
+    <!-- Include Prism.js and Python syntax highlighting component -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-python.min.js"></script>
 
+    <script>
+        let isCodeVisibleA = false; // Track visibility of example_original_reward.py
+        let isCodeVisibleB = false; // Track visibility of example_realworld_reward.py
+        let codeLoadedA = false;    // Ensure example_original_reward.py is loaded only once
+        let codeLoadedB = false;    // Ensure example_realworld_reward.py is loaded only once
 
+        // Toggle for example_original_reward.py
+        document.getElementById('toggleButtonA').addEventListener('click', function () {
+            const codeBlockA = document.getElementById('codeBlockA');
+            const buttonA = document.getElementById('toggleButtonA');
+            const buttonB = document.getElementById('toggleButtonB');
+            const codeBlockB = document.getElementById('codeBlockB');
 
-
-
-
-<script>
-
-    timeoutIds = [];
-
-    function populateDemo(imgs, num) {
-        // Get the expanded image
-        var expandImg = document.getElementById("expandedImg-" + num);
-        // Get the image text
-        var imgText = document.getElementById("imgtext-" + num);
-        var answer = document.getElementById("answer-" + num);
-
-        // Use the same src in the expanded image as the image being clicked on from the grid
-        expandImg.src = imgs.src.replace(".png", ".mp4");
-        var video = document.getElementById('demo-video-' + num);
-        // or video = $('.video-selector')[0];
-        video.pause()
-        video.load();
-        video.play();
-        video.removeAttribute('controls');
-
-        console.log(expandImg.src);
-        // Use the value of the alt attribute of the clickable image as text inside the expanded image
-        var qa = imgs.alt.split("[sep]");
-        imgText.innerHTML = qa[0];
-        answer.innerHTML = "";
-        // Show the container element (hidden with CSS)
-        expandImg.parentElement.style.display = "block";
-        for (timeoutId of timeoutIds) {
-            clearTimeout(timeoutId);
-        }
-
-        // NOTE (wliang): Modified from original to read from file instead
-        fetch(qa[1])
-            .then(response => response.text())
-            .then(contents => {
-                // Call the processData function and pass the contents as an argument
-                typeWriter(contents, 0, qa[0], num);
-            })
-            .catch(error => console.error('Error reading file:', error));
-    }
-
-    function typeWriter(txt, i, q, num) {
-        var imgText = document.getElementById("imgtext-" + num);
-        var answer = document.getElementById("answer-" + num);
-        if (imgText.innerHTML == q) {
-            for (let k = 0; k < 5; k++) {
-                if (i < txt.length) {
-                    if (txt.charAt(i) == "\\") {
-                        answer.innerHTML += "\n";
-                        i += 1;
-                    } else {
-                        answer.innerHTML += txt.charAt(i);
-                    }
-                    i++;
+            if (!isCodeVisibleA) {
+                if (!codeLoadedA) {
+                    fetch('./static/text/example_original_reward.py')
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`HTTP error! status: ${response.status}`);
+                            }
+                            return response.text();
+                        })
+                        .then(data => {
+                            codeBlockA.textContent = data;
+                            Prism.highlightAll(); // Highlight syntax
+                            codeLoadedA = true; // Mark example_original_reward.py as loaded
+                        })
+                        .catch(error => console.error('Error fetching example_original_reward.py:', error));
                 }
+                codeBlockA.style.display = 'block'; // Show the code block
+                buttonA.textContent = 'Hide example_original_reward.py'; // Update button text
+                buttonB.disabled = false; // Enable the example_realworld_reward.py button
+            } else {
+                codeBlockA.style.display = 'none'; // Hide the code block
+                buttonA.textContent = 'Show example_original_reward.py'; // Update button text
+                buttonB.disabled = true; // Disable the example_realworld_reward.py button
+                codeBlockB.style.display = 'none'; // Also hide the example_realworld_reward.py code block if example_original_reward.py is closed
+                buttonB.textContent = 'Show example_realworld_reward.py (the converted)'; // Reset example_realworld_reward.py button text
+                isCodeVisibleB = false; // Reset example_realworld_reward.py visibility state
             }
-            hljs.highlightAll();
-            timeoutIds.push(setTimeout(typeWriter, 1, txt, i, q, num));
-        }
-    }
+            isCodeVisibleA = !isCodeVisibleA;
+        });
 
-</script>
+        // Toggle for example_realworld_reward.py
+        document.getElementById('toggleButtonB').addEventListener('click', function () {
+            const codeBlockB = document.getElementById('codeBlockB');
+            const buttonB = document.getElementById('toggleButtonB');
+
+            if (!isCodeVisibleB) {
+                if (!codeLoadedB) {
+                    fetch('./static/text/example_realworld_reward.py')
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`HTTP error! status: ${response.status}`);
+                            }
+                            return response.text();
+                        })
+                        .then(data => {
+                            codeBlockB.textContent = data;
+                            Prism.highlightAll(); // Highlight syntax
+                            codeLoadedB = true; // Mark example_realworld_reward.py as loaded
+                        })
+                        .catch(error => console.error('Error fetching example_realworld_reward.py:', error));
+                }
+                codeBlockB.style.display = 'block'; // Show the code block
+                buttonB.textContent = 'Hide example_realworld_reward.py'; // Update button text
+            } else {
+                codeBlockB.style.display = 'none'; // Hide the code block
+                buttonB.textContent = 'Show example_realworld_reward.py  (the converted)'; // Update button text
+            }
+            isCodeVisibleB = !isCodeVisibleB;
+        });
+    </script>
+
+</body>
 
 
-  </html>
+</html>
