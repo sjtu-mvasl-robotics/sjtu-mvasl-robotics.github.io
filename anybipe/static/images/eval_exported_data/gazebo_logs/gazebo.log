@@ -1,0 +1,398 @@
+DIR: /home/fager/codespace/AnyBipe/src/eval/scripts
+[ 37%] Built target pf_groupJoints_move
+[ 37%] Built target pf_joint_move
+[ 37%] Built target pointfoot_sdk_sim_include_target
+[ 37%] Built target pointfoot_sdk_lowlevel_include_target
+[ 56%] Built target robot_controllers
+[ 56%] Built target pointfoot_sdk_lowlevel_target
+[ 56%] Built target pointfoot_sdk_sim_target
+[ 56%] Built target std_msgs_generate_messages_py
+[ 56%] Built target geometry_msgs_generate_messages_py
+[ 56%] Built target std_msgs_generate_messages_nodejs
+[ 56%] Built target roscpp_generate_messages_cpp
+[ 56%] Built target mros_bridger_target
+[ 56%] Built target rosgraph_msgs_generate_messages_nodejs
+[ 56%] Built target std_msgs_generate_messages_lisp
+[ 56%] Built target roscpp_generate_messages_eus
+[ 56%] Built target roscpp_generate_messages_py
+[ 56%] Built target std_msgs_generate_messages_eus
+[ 56%] Built target roscpp_generate_messages_nodejs
+[ 56%] Built target rosgraph_msgs_generate_messages_cpp
+[ 56%] Built target rosgraph_msgs_generate_messages_lisp
+[ 56%] Built target rosgraph_msgs_generate_messages_eus
+[ 56%] Built target std_msgs_generate_messages_cpp
+[ 56%] Built target roscpp_generate_messages_lisp
+[ 56%] Built target rosgraph_msgs_generate_messages_py
+[ 56%] Built target dynamic_reconfigure_generate_messages_py
+[ 56%] Built target dynamic_reconfigure_generate_messages_nodejs
+[ 56%] Built target dynamic_reconfigure_generate_messages_lisp
+[ 56%] Built target dynamic_reconfigure_gencfg
+[ 56%] Built target dynamic_reconfigure_generate_messages_cpp
+[ 56%] Built target dynamic_reconfigure_generate_messages_eus
+[ 56%] Built target trajectory_msgs_generate_messages_py
+[ 56%] Built target control_msgs_generate_messages_cpp
+[ 56%] Built target control_toolbox_generate_messages_nodejs
+[ 56%] Built target control_toolbox_generate_messages_lisp
+[ 56%] Built target control_toolbox_generate_messages_eus
+[ 56%] Built target control_toolbox_generate_messages_cpp
+[ 56%] Built target actionlib_msgs_generate_messages_cpp
+[ 56%] Built target control_toolbox_gencfg
+[ 56%] Built target controller_manager_msgs_generate_messages_py
+[ 56%] Built target controller_manager_msgs_generate_messages_nodejs
+[ 56%] Built target controller_manager_msgs_generate_messages_lisp
+[ 56%] Built target control_msgs_generate_messages_nodejs
+[ 56%] Built target controller_manager_msgs_generate_messages_eus
+[ 56%] Built target control_msgs_generate_messages_lisp
+[ 56%] Built target controller_manager_msgs_generate_messages_cpp
+[ 56%] Built target control_msgs_generate_messages_py
+[ 56%] Built target actionlib_msgs_generate_messages_eus
+[ 56%] Built target geometry_msgs_generate_messages_cpp
+[ 56%] Built target trajectory_msgs_generate_messages_lisp
+[ 56%] Built target geometry_msgs_generate_messages_nodejs
+[ 56%] Built target actionlib_msgs_generate_messages_nodejs
+[ 56%] Built target trajectory_msgs_generate_messages_cpp
+[ 56%] Built target actionlib_msgs_generate_messages_py
+[ 56%] Built target actionlib_msgs_generate_messages_lisp
+[ 56%] Built target trajectory_msgs_generate_messages_nodejs
+[ 56%] Built target control_toolbox_generate_messages_py
+[ 56%] Built target control_msgs_generate_messages_eus
+[ 56%] Built target geometry_msgs_generate_messages_eus
+[ 56%] Built target trajectory_msgs_generate_messages_eus
+[ 56%] Built target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target pointfoot_node
+[ 68%] Building CXX object rl-deploy-ros-cpp/robot_hw/CMakeFiles/pointfoot_node.dir/src/pointfootNode.cpp.o
+[ 68%] Building CXX object rl-deploy-ros-cpp/robot_hw/CMakeFiles/pointfoot_node.dir/src/PointfootHW.cpp.o
+[ 81%] Built target pointfoot_hw_sim
+[ 87%] Linking CXX executable /home/fager/codespace/AnyBipe/biped_ws/devel/lib/robot_hw/pointfoot_node
+[100%] Built target pointfoot_node
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/_setup_util.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/env.sh
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/setup.bash
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/local_setup.bash
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/setup.sh
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/local_setup.sh
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/setup.zsh
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/local_setup.zsh
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/.rosinstall
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/robot_common.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_common/cmake/robot_commonConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_common/cmake/robot_commonConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_common/package.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/.
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/./robot_common
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/./robot_common/hardware_interface
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/./robot_common/hardware_interface/ContactSensorInterface.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/./robot_common/hardware_interface/HybridJointInterface.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/pointfoot_sdk_lowlevel.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_sdk_lowlevel/cmake/pointfoot_sdk_lowlevelConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_sdk_lowlevel/cmake/pointfoot_sdk_lowlevelConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_sdk_lowlevel/package.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/macros.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/pointfoot.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/apibase.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/datatypes.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/.
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/./libpointfoot_sdk_lowlevel.so
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/__init__.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/datatypes
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/datatypes/RobotState.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/datatypes/__init__.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/datatypes/SensorJoy.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/datatypes/DiagnosticValue.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/datatypes/RobotCmd.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/datatypes/ImuData.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/robot
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/robot/__init__.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/robot/_robot.so
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/robot/Robot.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/robot/Rate.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/python3/dist-packages/limxsdk/robot/RobotType.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pointfoot_sdk_lowlevel/pf_joint_move
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pointfoot_sdk_lowlevel/pf_groupJoints_move
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/pointfoot_sdk_sim.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_sdk_sim/cmake/pointfoot_sdk_simConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_sdk_sim/cmake/pointfoot_sdk_simConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_sdk_sim/package.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/pointfoot_sim.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/macros.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/apibase.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/limxsdk/datatypes.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/.
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/./libpointfoot_sdk_sim.so
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/robot_description.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/cmake/robot_descriptionConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/package.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/urdf
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/urdf/robot.urdf
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro/const.xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro/gazebo.xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro/transmission.xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro/leg.xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro/ros2_control_interface.xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro/robot.xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/xacro/materials.xacro
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/foot_R_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/test.py
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/knee_R_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/knee_L_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/base_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/hip_R_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/foot_L_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/hip_L_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/abad_R_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_description/pointfoot/meshes/abad_L_Link.STL
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/robot_controllers.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/cmake/robot_controllersConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/cmake/robot_controllersConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/package.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/librobot_controllers.so
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_controllers/.
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_controllers/./robot_controllers
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_controllers/./robot_controllers/ControllerBase.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_controllers/./robot_controllers/PointfootController.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/controllers.yaml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/params.yaml.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk.bk.bk.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy_original.onnx.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx.bk.bk.bk
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/robot_controllers_plugins.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/robot_visualization.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/cmake/robot_visualizationConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/cmake/robot_visualizationConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/package.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/robot_visualization/mrosbridger
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/layout
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/layout/pointfoot.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/launch/pointfoot_plot_hw.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/launch/pointfoot_plot_sim.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/launch/pointfoot_rviz_hw.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/rviz
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_visualization/rviz/pointfoot.rviz
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/pointfoot_gazebo.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/cmake/pointfoot_gazeboConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/cmake/pointfoot_gazeboConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/package.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/libpointfoot_hw_sim.so
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/pointfoot_gazebo
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/pointfoot_gazebo/PointFootHWSim.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/pointfoot_hw_sim_plugins.xml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/config
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/config/default_point_foot.yaml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/launch/reset_pose.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/launch/empty_world.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/launch/empty_world_headless.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/worlds
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/pointfoot_gazebo/worlds/empty_world.world
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/lib/pkgconfig/robot_hw.pc
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/cmake/robot_hwConfig.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/cmake/robot_hwConfig-version.cmake
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/package.xml
+-- Installing: /home/fager/codespace/AnyBipe/biped_ws/install/lib/robot_hw/pointfoot_node
+-- Set runtime path of "/home/fager/codespace/AnyBipe/biped_ws/install/lib/robot_hw/pointfoot_node" to ""
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_hw/.
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_hw/./robot_hw
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_hw/./robot_hw/RobotData.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_hw/./robot_hw/RobotHWLoop.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_hw/./robot_hw/RobotHW.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/include/robot_hw/./robot_hw/PointfootHW.h
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/config
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/config/joystick.yaml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/config/robot_hw.yaml
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/launch/pointfoot_hw.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/launch/pointfoot_hw_sim.launch
+-- Up-to-date: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/launch/pointfoot_hw_sim_headless.launch
+Base path: /home/fager/codespace/AnyBipe/biped_ws
+Source space: /home/fager/codespace/AnyBipe/biped_ws/src
+Build space: /home/fager/codespace/AnyBipe/biped_ws/build
+Devel space: /home/fager/codespace/AnyBipe/biped_ws/devel
+Install space: /home/fager/codespace/AnyBipe/biped_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/fager/codespace/AnyBipe/biped_ws/build"
+####
+####
+#### Running command: "make install -j8 -l8" in "/home/fager/codespace/AnyBipe/biped_ws/build"
+####
+INFO: RobotIPAddress - "127.0.0.1"
+[33m[ WARN] [1726129721.713711717]: Connect to the robot: 127.0.0.1[0m
+[INFO] [1726129721.532530, 0.000000]: Loading model XML from ros parameter robot_description
+[INFO] [1726129721.536085, 0.000000]: Waiting for service /gazebo/spawn_urdf_model
+[INFO] [1726129722.442383, 0.264000]: Calling service /gazebo/spawn_urdf_model
+[INFO] [1726129722.651750, 0.370000]: Spawn status: SpawnModel: Successfully spawned entity
+[33m[ WARN] [1726129723.535605327, 0.546000000]: Calibration state: 0, msg: [0m
+Loaded '/controllers/pointfoot_controller'
+[0m[ INFO] [1726129721.718184239]: Get joint limits start...[0m
+INFO: Waitting for joint limit...
+INFO: Received joint limit.
+[0m[ INFO] [1726129723.317745906, 0.370000000]: Get joint limits check...[0m
+[0m[ INFO] [1726129723.317786754, 0.370000000]: limitJointAngles i: 0 angle: 0[0m
+[0m[ INFO] [1726129723.317796949, 0.370000000]: limitJointAngles i: 1 angle: 0[0m
+[0m[ INFO] [1726129723.317804992, 0.370000000]: limitJointAngles i: 2 angle: 0[0m
+[0m[ INFO] [1726129723.317812902, 0.370000000]: limitJointAngles i: 3 angle: 0[0m
+[0m[ INFO] [1726129723.317820396, 0.370000000]: limitJointAngles i: 4 angle: 0[0m
+[0m[ INFO] [1726129723.317828006, 0.370000000]: limitJointAngles i: 5 angle: 0[0m
+[0m[ INFO] [1726129723.317835580, 0.370000000]: Get joint limits finished![0m
+[0m[ INFO] [1726129723.317845031, 0.370000000]: Get joint offset start...[0m
+INFO: Waitting for joint offset...
+INFO: Received joint offset.
+[0m[ INFO] [1726129723.424787446, 0.436000000]: offsetJointAngles  i: 0 angle: 0[0m
+[0m[ INFO] [1726129723.424818900, 0.436000000]: offsetJointAngles  i: 1 angle: 0[0m
+[0m[ INFO] [1726129723.424832488, 0.436000000]: offsetJointAngles  i: 2 angle: 0[0m
+[0m[ INFO] [1726129723.424847156, 0.436000000]: offsetJointAngles  i: 3 angle: 0[0m
+[0m[ INFO] [1726129723.424859247, 0.436000000]: offsetJointAngles  i: 4 angle: 0[0m
+[0m[ INFO] [1726129723.424874287, 0.436000000]: offsetJointAngles  i: 5 angle: 0[0m
+[0m[ INFO] [1726129723.424888454, 0.436000000]: Get joint offset finished![0m
+[0m[ INFO] [1726129723.479330996, 0.490000000]: Load param:
+loop_frequency: 500.000000, 
+cycleTimeErrorThreshold: 0.002000[0m
+[0m[ INFO] [1726129723.669874816, 0.680000000]: =======start ObsScales========[0m
+[0m[ INFO] [1726129723.669954553, 0.680000000]: linVel: 2[0m
+[0m[ INFO] [1726129723.669989883, 0.680000000]: angVel: 0.25[0m
+[0m[ INFO] [1726129723.670019775, 0.680000000]: dofPos: 1[0m
+[0m[ INFO] [1726129723.670056646, 0.680000000]: dofVel: 0.05[0m
+[0m[ INFO] [1726129723.670088353, 0.680000000]: =======end ObsScales========
+[0m
+[0m[ INFO] [1726129723.670125075, 0.680000000]: =======start ObsScales========[0m
+[0m[ INFO] [1726129723.670164693, 0.680000000]: stiffness: 40[0m
+[0m[ INFO] [1726129723.670218465, 0.680000000]: damping: 2.5[0m
+[0m[ INFO] [1726129723.670277123, 0.680000000]: action_scale_pos: 0.5[0m
+[0m[ INFO] [1726129723.670319652, 0.680000000]: action_scale_vel: 0[0m
+[0m[ INFO] [1726129723.670354505, 0.680000000]: decimation: 4[0m
+[0m[ INFO] [1726129723.670381317, 0.680000000]: =======end ObsScales========
+[0m
+[0m[ INFO] [1726129723.670418328, 0.680000000]: =======Start User Cmd Scales========[0m
+[0m[ INFO] [1726129723.670455340, 0.680000000]: lin_vel_x: 1.5[0m
+[0m[ INFO] [1726129723.670487196, 0.680000000]: lin_vel_y: 1[0m
+[0m[ INFO] [1726129723.670523895, 0.680000000]: ang_vel_yaw: 0.5[0m
+[0m[ INFO] [1726129723.670557730, 0.680000000]: =======End User Cmd Scales========
+[0m
+[0m[ INFO] [1726129723.670591187, 0.680000000]: clipActions: 100[0m
+[0m[ INFO] [1726129723.670624213, 0.680000000]: clipObs: 100[0m
+[0m[ INFO] [1726129723.701305830, 0.712000000]: Loading policy from: /home/fager/codespace/AnyBipe/biped_ws/install/share/robot_controllers/config/pointfoot/policy/policy.onnx[0m
+[0m[ INFO] [1726129723.710746162, 0.720000000]: GetInputName: nn_input[0m
+[0m[ INFO] [1726129723.710784056, 0.720000000]: Shape: [27][0m
+[0m[ INFO] [1726129723.710809145, 0.720000000]: GetOutputName: nn_output[0m
+[0m[ INFO] [1726129723.710830383, 0.720000000]: Shape: [6][0m
+[0m[ INFO] [1726129723.710843766, 0.720000000]: Successfully loaded ONNX models![0m
+[0m[ INFO] [1726129723.710994276, 0.722000000]: hybridJointHandles jointNames: [abad_L_Joint, hip_L_Joint, knee_L_Joint, abad_R_Joint, hip_R_Joint, knee_R_Joint][0m
+[0m[ INFO] [1726129726.485950475, 3.490000000]: starting hybridJointHandle: -0.191034[0m
+[0m[ INFO] [1726129726.486054123, 3.490000000]: starting hybridJointHandle: -1.01238[0m
+[0m[ INFO] [1726129726.486091749, 3.490000000]: starting hybridJointHandle: 1.36[33m[ WARN] [1726129727.533084273, 4.536000000]: Cycle time exceeded error threshold by: 0.000616s, cycle time: 0.004616s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129727.942291069, 4.944000000]: Cycle time exceeded error threshold by: 0.002339s, cycle time: 0.006339s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129729.480356625, 6.478000000]: Cycle time exceeded error threshold by: 0.001471s, cycle time: 0.005471s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129730.392070022, 7.388000000]: Cycle time exceeded error threshold by: 0.003601s, cycle time: 0.007601s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129730.582295034, 7.578000000]: Cycle time exceeded error threshold by: 0.001417s, cycle time: 0.005417s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129730.886289450, 7.882000000]: Cycle time exceeded error threshold by: 0.000918s, cycle time: 0.004918s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129740.570304107, 17.544000000]: Cycle time exceeded error threshold by: 0.004381s, cycle time: 0.008381s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129743.758292295, 20.726000000]: Cycle time exceeded error threshold by: 0.000738s, cycle time: 0.004738s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129744.062291590, 21.028000000]: Cycle time exceeded error threshold by: 0.003797s, cycle time: 0.007797s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129745.410793560, 22.376000000]: Cycle time exceeded error threshold by: 0.004576s, cycle time: 0.008576s, threshold: 0.002000s[0m
+[33m[ WARN] [1726129745.820861904, 22.786000000]: Cycle time exceeded error threshold by: 0.006803s, cycle time: 0.010803s, threshold: 0.002000s[0m
+... logging to /home/fager/.ros/log/ff5344ee-70e0-11ef-831e-13ddcc133c26/roslaunch-fager-g-4247.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/launch/pointfoot_hw_sim_headless.launch
+[1mstarted roslaunch server http://fager-g:42647/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /pointfoot_hw/
+ * /spawn_urdf/
+
+PARAMETERS
+ * /PointfootCfg/control/action_scale_pos: 0.5
+ * /PointfootCfg/control/damping: 2.5
+ * /PointfootCfg/control/decimation: 4
+ * /PointfootCfg/control/stiffness: 40.0
+ * /PointfootCfg/control/user_torque_limit: 60
+ * /PointfootCfg/imu_orientation_offset/pitch: 0.0
+ * /PointfootCfg/imu_orientation_offset/roll: 0.0
+ * /PointfootCfg/imu_orientation_offset/yaw: 0.0
+ * /PointfootCfg/init_state/default_joint_angle/abad_L_Joint: 0.0
+ * /PointfootCfg/init_state/default_joint_angle/abad_R_Joint: 0.0
+ * /PointfootCfg/init_state/default_joint_angle/hip_L_Joint: 0.0
+ * /PointfootCfg/init_state/default_joint_angle/hip_R_Joint: 0.0
+ * /PointfootCfg/init_state/default_joint_angle/knee_L_Joint: 0.0
+ * /PointfootCfg/init_state/default_joint_angle/knee_R_Joint: 0.0
+ * /PointfootCfg/joint_names: ['abad_L_Joint', ...
+ * /PointfootCfg/normalization/clip_scales/clip_actions: 100.0
+ * /PointfootCfg/normalization/clip_scales/clip_observations: 100.0
+ * /PointfootCfg/normalization/obs_scales/ang_vel: 0.25
+ * /PointfootCfg/normalization/obs_scales/dof_pos: 1.0
+ * /PointfootCfg/normalization/obs_scales/dof_vel: 0.05
+ * /PointfootCfg/normalization/obs_scales/lin_vel: 2.0
+ * /PointfootCfg/size/actions_size: 6
+ * /PointfootCfg/size/commands_size: 3
+ * /PointfootCfg/size/observations_size: 27
+ * /PointfootCfg/stand_mode/stand_duration: 1.0
+ * /PointfootCfg/user_cmd_scales/ang_vel_yaw: 0.5
+ * /PointfootCfg/user_cmd_scales/lin_vel_x: 1.5
+ * /PointfootCfg/user_cmd_scales/lin_vel_y: 1.0
+ * /controllers/pointfoot_controller/type: robot_controller/...
+ * /gazebo/contacts: ['contact_L_Link'...
+ * /gazebo/delay: 0.009
+ * /gazebo/enable_ros_network: True
+ * /gazebo/imus/limx_imu/angular_velocity_covariance: [0.0004, 0.0004, ...
+ * /gazebo/imus/limx_imu/frame_id: limx_imu
+ * /gazebo/imus/limx_imu/linear_acceleration_covariance: [0.01, 0.01, 0.01]
+ * /gazebo/imus/limx_imu/orientation_covariance_diagonal: [0.0012, 0.0012, ...
+ * /policyFile: /home/fager/codes...
+ * /robot_description: <?xml version="1....
+ * /robot_hw/contact_threshold: 40
+ * /robot_hw/cycle_time_error_threshold: 0.002
+ * /robot_hw/loop_frequency: 500
+ * /robot_hw/power_limit: 6
+ * /rosdistro: noetic
+ * /rosversion: 1.16.0
+ * /use_gazebo: True
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    pointfoot_hw (robot_hw/pointfoot_node)
+    spawn_urdf (gazebo_ros/spawn_model)
+  /pointfoot_hw/
+    controller_loader (controller_manager/controller_manager)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/fager/codespace/AnyBipe/biped_ws/install/share/robot_hw/launch/pointfoot_hw_sim_headless.launch http://localhost:11311
+[1mprocess[gazebo-1]: started with pid [4712][0m
+[1mprocess[spawn_urdf-2]: started with pid [4717][0m
+[1mprocess[pointfoot_hw-3]: started with pid [4718][0m
+[1mprocess[pointfoot_hw/controller_loader-4]: started with pid [4719][0m
+[1m[spawn_urdf-2] process has finished cleanly
+log file: /home/fager/.ros/log/ff5344ee-70e0-11ef-831e-13ddcc133c26/spawn_urdf-2*.log[0m
+[1m[pointfoot_hw/controller_loader-4] process has finished cleanly
+log file: /home/fager/.ros/log/ff5344ee-70e0-11ef-831e-13ddcc133c26/pointfoot_hw-controller_loader-4*.log[0m
+[pointfoot_hw-3] killing on exit
+[gazebo-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
