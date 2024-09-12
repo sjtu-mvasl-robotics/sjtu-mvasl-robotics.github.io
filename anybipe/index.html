@@ -44,8 +44,46 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+
+<!-- CSS to enable scrolling and code formatting -->
+<style>
+  .code-block {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: pre-wrap; /* Prevent code from breaking lines */
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+
+  .code-block code {
+    display: block;
+    white-space: pre; /* Preserve formatting */
+  }
+
+  /* Optional: Carousel styling (if using a carousel) */
+  /* .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  } */
+
+  .item {
+    min-width: 100%; /* Adjust based on your layout */
+    scroll-snap-align: center;
+    margin-right: 1rem;
+  }
+
+
+</style>
+
 </head>
 <body>
+
 
 
   <section class="hero">
@@ -57,13 +95,13 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yifei Yao</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yifei Yao</a>,</span>
 
                 <span class="author-block">
-                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du</a>*</sup>,
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du</a>,
                 </span>
                 <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chengyu Gu</a><sup>*</sup>,</span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chengyu Gu</a>,</span>
                 <span class="author-block">
                     <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Wentao He</a>
                 </span>
@@ -132,6 +170,7 @@
 </section>
 
 
+
 <!-- Teaser video-->
 <section class="hero teaser">
     <div class="container is-max-desktop">
@@ -167,6 +206,9 @@ Training and deploying reinforcement learning (RL) policies for robots, especial
 </section>
 <!-- End paper abstract -->
 
+
+
+
 <!-- Pipeline Start -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -191,6 +233,15 @@ Training and deploying reinforcement learning (RL) policies for robots, especial
     </div>
     </div>
     </section>
+
+
+    <div class="content">
+        <h1 class="subtitle"  style="text-align: left; padding-left: 60px;" >
+            Module 1: LLM Reward Function Generation
+        </h1>
+    </div>
+
+
     
     <!-- Long text section -->
     <section class="hero is-small">
@@ -212,13 +263,71 @@ Training and deploying reinforcement learning (RL) policies for robots, especial
 </section>
 <!-- End long text section -->
 
+
+
+
+    <div class="content">
+        <h1 class="subtitle"  style="text-align: left; padding-left: 60px;" >
+            Module 3: Deploy, Evaluation, and Feedback
+        </h1>
+    </div>
+
+
+    <!-- Long text section -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
+        <p class="has-text-justified">
+In module 3 we optimize bipedal robot reinforcement learning strategies, implement state estimators, and
+align evaluations with reward functions. To avoid ineffective rewards, basic training metrics (such as command
+compliance and survival time) are used to filter samples, and custom observation metrics can be defined for specific
+tasks. The top 15% of strategies are then selected for real-world deployment.
+
+The training and real environments are considered isomorphic, with a mapping function ensuring that real-world
+evaluations reflect the reward function. Models are first tested in a simulation environment for safety and stability,
+and only the best-performing models are tested in real-world conditions, with optimal strategies selected based on
+performance in both environments.
+
+The system automates the process from reward generation to training, deployment, and optimization, allowing users to
+train bipedal robots without pre-existing strategies.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End long text section -->
+
+<!-- Homomorphic Reward Function Conversation Procedure -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+     <div class="item">
+
+    <div class="content">
+        <h2 class="subtitle has-text-centered">
+            Reward Function Conversion
+        </h2>
+    </div>
+
+        <!-- Your image here -->
+    <img src="static/images/homomorphic_conv.png" alt="MY ALT TEXT" />
+    </div>
+    </div>
+    </div>
+    </section>
+
 <!-- Code block with horizontal scrolling -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+
+    <div class="content">
+        <h2 class="subtitle has-text-centered">
+            Code Transformation
+        </h2>
+    </div>
       <div id="code-block-carousel" class="carousel code-carousel">
         <div class="item">
-        <h2 class="subtitle has-text-centered">Code Conversion Demonstration</h2>
           <pre class="code-block">
 <code>
 // First code snippet1
@@ -261,38 +370,6 @@ person.introduce();
   </div>
 </section>
 
-<!-- CSS to enable scrolling and code formatting -->
-<style>
-  .code-block {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    border-radius: 8px;
-    max-width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: pre-wrap; /* Prevent code from breaking lines */
-    font-family: monospace;
-    font-size: 14px;
-    border: 1px solid #ddd;
-  }
-
-  .code-block code {
-    display: block;
-    white-space: pre; /* Preserve formatting */
-  }
-
-  /* Optional: Carousel styling (if using a carousel) */
-  /* .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  } */
-
-  .item {
-    min-width: 100%; /* Adjust based on your layout */
-    scroll-snap-align: center;
-    margin-right: 1rem;
-  }
-</style>
 
 
 
@@ -301,7 +378,13 @@ person.introduce();
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+
+    <div class="content">
+        <h2 class="subtitle has-text-centered">
+            Expreiment Highlights
+        </h2>
+    </div>
+    <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
@@ -429,10 +512,15 @@ person.introduce();
       <div class="column is-8">
         <div class="content">
 
+        <!-- <p>
+                    This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                    You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                  </p> -->
+
+
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+              Website template borrowed from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank"> the Academic Project Page Template</a>, <a href="https://nerfies.github.io" target="_blank">Nerfies</a> , and <a href="https://eureka-research.github.io/" target="_blank">Eureka</a>.
           </p>
 
         </div>
@@ -448,4 +536,74 @@ person.introduce();
     <!-- End of Statcounter Code -->
 
   </body>
+
+
+
+
+
+
+<script>
+
+    timeoutIds = [];
+
+    function populateDemo(imgs, num) {
+        // Get the expanded image
+        var expandImg = document.getElementById("expandedImg-" + num);
+        // Get the image text
+        var imgText = document.getElementById("imgtext-" + num);
+        var answer = document.getElementById("answer-" + num);
+
+        // Use the same src in the expanded image as the image being clicked on from the grid
+        expandImg.src = imgs.src.replace(".png", ".mp4");
+        var video = document.getElementById('demo-video-' + num);
+        // or video = $('.video-selector')[0];
+        video.pause()
+        video.load();
+        video.play();
+        video.removeAttribute('controls');
+
+        console.log(expandImg.src);
+        // Use the value of the alt attribute of the clickable image as text inside the expanded image
+        var qa = imgs.alt.split("[sep]");
+        imgText.innerHTML = qa[0];
+        answer.innerHTML = "";
+        // Show the container element (hidden with CSS)
+        expandImg.parentElement.style.display = "block";
+        for (timeoutId of timeoutIds) {
+            clearTimeout(timeoutId);
+        }
+
+        // NOTE (wliang): Modified from original to read from file instead
+        fetch(qa[1])
+            .then(response => response.text())
+            .then(contents => {
+                // Call the processData function and pass the contents as an argument
+                typeWriter(contents, 0, qa[0], num);
+            })
+            .catch(error => console.error('Error reading file:', error));
+    }
+
+    function typeWriter(txt, i, q, num) {
+        var imgText = document.getElementById("imgtext-" + num);
+        var answer = document.getElementById("answer-" + num);
+        if (imgText.innerHTML == q) {
+            for (let k = 0; k < 5; k++) {
+                if (i < txt.length) {
+                    if (txt.charAt(i) == "\\") {
+                        answer.innerHTML += "\n";
+                        i += 1;
+                    } else {
+                        answer.innerHTML += txt.charAt(i);
+                    }
+                    i++;
+                }
+            }
+            hljs.highlightAll();
+            timeoutIds.push(setTimeout(typeWriter, 1, txt, i, q, num));
+        }
+    }
+
+</script>
+
+
   </html>
