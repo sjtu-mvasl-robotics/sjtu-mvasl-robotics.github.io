@@ -44,8 +44,8 @@
     <script src="static/js/bulma-slider.min.js"></script>
     <script src="static/js/index.js"></script>
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
     <!-- Include Prism.js stylesheet for syntax highlighting -->
@@ -146,6 +146,33 @@
             cursor: not-allowed;
             /* Change cursor for disabled button */
         }
+
+        .algorithm {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .algorithm-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .algorithm-step {
+            margin-left: 20px;
+        }
+
+        .comment {
+            color: green;
+            font-style: italic;
+        }
+
+        pre {
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
     </style>
 </head>
 
@@ -163,21 +190,41 @@
                         <div class="is-size-5 publication-authors">
                             <!-- Paper authors -->
                             <span class="author-block">
-                                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yifei Yao</a>,</span>
-
+                                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yifei Yao<sup>1</sup></a>,</span>
                             <span class="author-block">
-                                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du</a>,
+                                <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Wentao He<sup>2,*</sup></a>,
                             </span>
                             <span class="author-block">
-                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chengyu Gu</a>,</span>
+                                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chengyu
+                                    Gu<sup>1,*</sup></a>,</span>
                             <span class="author-block">
-                                <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Wentao He</a>
+                                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jiaheng Du<sup>1,*</sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Fuwei Tan<sup>1</sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Zhen Zhu<sup>1</sup></a>,
+                            </span>
+                            <span class="author-block">
+                                <a href="SEVENTH AUTHOR PERSONAL LINK" target="_blank">Junguo Lu<sup>1</sup></a>
                             </span>
                         </div>
 
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block">Institution Name<br>Conferance name and year</span>
-                            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                            <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                            <span class="eql-cntrb"><small><br>
+                                    <sup>1</sup> All authors are with Machine Vision and Autonomous System Laboratory,
+                                    Department of Automation, School of Electrical Information and Electronic
+                                    Engineering, Shanghai Jiao Tong University, Shanghai, China, with the Key Laboratory
+                                    f System Control and Information Processing, Ministry of Education of China, and
+                                    with Shanghai Engineering Research Center of Intelligent Control and Management,
+                                    Shanghai 200240, China.
+                                </small></span>
+                            <span class="eql-cntrb"><small><br><sup>2</sup>Wentao He is is with University of Michigan -
+                                    Shanghai Jiao Tong University Joint Institute , Shanghai Jiao Tong
+                                    University, Shanghai, China</small></span>
                         </div>
 
                         <div class="column has-text-centered">
@@ -248,10 +295,7 @@
                     <source src="static/videos/banner_video.mp4" type="video/mp4">
                 </video>
                 <h2 class="subtitle has-text-centered">
-                    AAAAAAAliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel
-                    lectus
-                    at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut
-                    maximus.
+                    <!-- REPLACE ME WITH TITLE -->
                 </h2>
             </div>
         </div>
@@ -289,6 +333,67 @@
     <!-- End paper abstract -->
 
 
+    <!-- long text section -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
+                    <h2 class="subtitle has-text-centered">
+                        Introduction
+                    </h2>
+                    <p>
+                        With the integration of advanced algorithms, enhanced physical simulations, and improved
+                        computational power, robotics has made significant strides. These innovations enable robots to
+                        perform tasks ranging from industrial automation to personal assistance with unprecedented
+                        efficiency and autonomy. As industrial robotics matures, research increasingly focuses on
+                        humanoid robots, particularly in replicating human-like characteristics and enabling robots to
+                        perform traditionally human tasks. Bipedal robots, which emulate human lower-body movements, are
+                        central to achieving human-like mobility in robots.
+                    </p>
+
+                    <p>
+                        Control strategies for bipedal robots typically leverage either traditional control methods or
+                        reinforcement learning (RL). Traditional approaches rely on problem abstraction, modeling, and
+                        detailed planning, while RL employs reward functions to iteratively guide robots toward task
+                        completion. Through repeated interactions with the environment, RL enables robots to refine
+                        control strategies and acquire essential skills, particularly excelling in trial-and-error
+                        learning in simulated environments, where robots adapt to complex terrains and disturbances.
+                    </p>
+
+                    <p>
+                        Despite these advancements, training and deploying RL algorithms remains challenging. Effective
+                        reward design requires careful consideration of task-specific goals and the incorporation of
+                        safety constraints for real-world applications. This complexity demands significant engineering
+                        effort in training, testing, and iterative refinement. Although reward shaping and safe RL offer
+                        potential solutions, they often rely on prior experience, complicating the reward design
+                        process. Furthermore, bridging the gap between simulations and real-world conditions—the
+                        "Sim-to-Real" challenge—remains difficult. Techniques such as <i>domain randomization</i>, which
+                        randomizes physical parameters to enhance agent robustness, and <i>observation design</i>, which
+                        facilitates task transfers across varied terrains, remain essential but still require real-world
+                        testing and human feedback. Ultimately, precise evaluation metrics are crucial for guiding and
+                        refining RL algorithm performance.
+                    </p>
+
+                    <p>
+                        The integration of large language models (LLMs) into robotics represents a transformative
+                        advancement. Known for their capabilities in code generation, problem-solving, and task
+                        planning, LLMs are increasingly being applied to complex robotics applications. For instance,
+                        they play a pivotal role in embodied intelligence by enabling the dynamic creation of action
+                        tasks. Recent developments have further enhanced the utility of LLMs in improving reward
+                        function design, advancing Sim-to-Real transfer, and refining performance verification—key areas
+                        that reduce the need for extensive real-world testing and human intervention. However, a
+                        comprehensive framework that automatically implements all trained models in real-world settings
+                        remains lacking. To address this issue and adapt to these innovations, we propose a novel
+                        framework that leverages LLMs to optimize the entire training-to-deployment process. This
+                        framework minimizes human engineering involvement, facilitating the autonomous training and
+                        deployment of RL algorithms, and enabling both the development of new models and the enhancement
+                        of existing ones.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Pipeline Start -->
@@ -306,25 +411,281 @@
                     <!-- Your image here -->
                     <img src="static/images/pipeline.png" alt="MY ALT TEXT" />
                     <!-- <iframe src="static/images/pipeline.pdf" width="600" height="400"></iframe> -->
-                    <b>Overview</b>. The frameworks of Anybipe are organized in three interconnected modules. After
+                    <!-- <b>Overview</b>. -->
+                    <!-- The frameworks of Anybipe are organized in three interconnected modules. After
                     receiving all
                     pre-requisites and requirements, the
                     framework generates reward funvion via LLM, train it in simulation and evaluates in both gazebo and
                     reality,
                     providing
-                    important feedback. The whole procedure requires minimum human labor.
+                    important feedback. The whole procedure requires minimum human labor. -->
+                    <p>
+                        <b>Overview</b>.
+                        Our frameworks are organized in three interconnected modules.
+                        After receiving all pre-requisites and requirements, the framework generates reward funvion via
+                        LLM, trains it in simulation and evaluates in both gazebo and reality, providing important
+                        feedback.
+                        The whole procedure requires minimum human labor.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <div class="content">
-        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
-            <br>
-            Module 1: LLM Reward Function Generation
-        </h1>
-    </div>
+    <!-- long text section -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
+                    <p>We introduce <i>AnyBipe</i>, the <b>first</b> end-to-end framework for the training, simulation,
+                        and deployment of bipedal robots, guided by LLMs.
+                        This framework, now publicly available on GitHub, consists of three interconnected modules and
+                        embodies a closed-loop process for continual refinement and deployment.
+                        Our main contributions are listed as follows:</p>
+
+                    <ol>
+                        <li><b>Minimized Human Intervention:</b> The proposed framework operates autonomously, requiring
+                            only minimal initial user input to oversee the entire process from training to deployment.
+                            No additional human intervention is needed during the workflow.</li>
+
+                        <li><b>LLM-Guided Reward Function Design:</b> Leveraging large language models, the framework
+                            generates suitable reward functions from predefined prompts. Through iterative refinement,
+                            it allows users to design customized RL reward functions from the ground up.</li>
+
+                        <li><b>Incorporation of Prior Knowledge in Training:</b> The framework enables the integration
+                            of pre-trained models and conventional control algorithms, which enhances RL training
+                            stability and facilitates the migration of traditional control implementations into the
+                            proposed system.</li>
+
+                        <li><b>Real-World Feedback Integration via Homomorphic Evaluation:</b> This module converts
+                            real-world sensor and actuator feedback into formats compatible with simulation, enabling
+                            LLMs to bridge the gap between the training environment and real-world deployment. As a
+                            result, it allows for adaptive adjustments to the reward function based on actual feedback.
+                        </li>
+                    </ol>
+<p>
+Experimental trials on bipedal robots traversing both flat and complex terrains have shown that <i>AnyBipe</i> can significantly enhance real-world deployment performance. Compared to manually designed reward functions, those generated by <i>AnyBipe</i> lead to faster and more stable training outcomes. Moreover, the integration of RL strategies with traditional control algorithms has proven to stabilize training and prevent convergence to high-reward but low-usability solutions. Valuable real-world feedback has further refined reward functions, thereby improving Sim-to-Real performance.
+</p>
+
+<p>
+The paper is organized to initially detail the design principles and implementation of the framework's modules, elucidate the experimental setup and results, and explore the implications of these findings. We conclude with a summary of our contributions and propose future research directions in autonomous robotic systems.
+</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- long text section -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
+
+                    <div class="content">
+                        <h2 class="subtitle has-text-centered">
+                            Related Works
+                        </h2>
+                    </div>
+
+                    <p><b>Reinforcement Learning for Bipedal Robots.</b> Reinforcement learning (RL) has achieved
+                        significant success in enabling legged robots to learn locomotion and motion control through
+                        data-driven methods, allowing them to adapt to diverse environmental challenges. Although RL has
+                        traditionally been applied to quadruped robots, recent studies have extended these techniques to
+                        bipedal robots, such as Cassie. Research has introduced RL-based locomotion strategies, training
+                        in simulation environments like MuJoCo and Isaac Gym. Additional approaches explore imitation
+                        learning, motion planning, and robust RL strategies, enabling bipedal robots to perform tasks
+                        like running, stair climbing, and complex maneuvers. Building on these advancements, our work
+                        utilizes the Isaac Gym environment, proposing a supervised RL framework to mitigate risks
+                        associated with suboptimal training outcomes.</p>
+
+                    <p><b>Large Language Model Guided Robotics.</b> Large language models (LLMs) have demonstrated
+                        considerable capabilities in task understanding, semantic planning, and code generation, making
+                        them valuable tools for robotics applications. LLMs automate environmental analysis, design
+                        reward functions, and map tasks to actions. However, challenges such as data scarcity, real-time
+                        performance, and real-world integration remain. Additionally, LLM-driven reward shaping
+                        typically depends on human feedback or manual refinement. Our framework addresses these
+                        limitations by leveraging LLMs from code generation through deployment, using environmental
+                        features and safety constraints as priors. It uniquely incorporates homomorphic feedback from
+                        real-world applications, reducing the need for in-process human intervention.</p>
+
+                    <p><b>Sim-to-real Training and Deploying Techniques.</b> The gap between simulated environments and
+                        real-world conditions, known as the “reality gap,” presents significant challenges for deploying
+                        RL strategies in robotics. Techniques such as domain randomization and system identification are
+                        widely used to address this issue. Researchers have proposed sim-to-real solutions for bipedal
+                        robots to handle tasks such as turning and walking. Recent work has also integrated LLMs to
+                        enhance environmental modeling and reward function design, making simulations more reflective of
+                        real-world complexity. However, most approaches still rely on separate training in simulation
+                        and real-world evaluation, often using human feedback to assess sim-to-real effectiveness. Our
+                        work extends these techniques by introducing an evaluation loop that continuously monitors
+                        sim-to-real performance during deployment.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- long text section -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
+
+                    <div class="content">
+                        <h2 class="subtitle has-text-centered">
+                            Methods
+                        </h2>
+                    </div>
+
+
+                    <p>In this section, we detail the <i>AnyBipe</i> framework, composed of three modules designed to
+                        automate reward design, simulation training, and deployment feedback, thereby minimizing human
+                        intervention. The framework integrates the robot's URDF model, a basic task description, an RL
+                        training platform, and a ROS-based system for communication and control, along with an SDK for
+                        sensor and actuator data. Optional elements include a manual reward function template, a teacher
+                        model for strategy implementation, and custom environmental observations. <i>AnyBipe</i>
+                        generates reward functions and trains deployable policies guided by the teacher model. The best
+                        strategies, determined by success criteria and simulation tests, are deployed via ROS. After
+                        validating in the ROS Gazebo simulation, successful policies undergo real-world testing.
+                        Evaluation across various environments and the selected best policy guide iterative improvements
+                        in reward generation. The procedural steps are encapsulated in Algorithm 1.</p>
+
+
+                    <div class="algorithm">
+                        <div class="algorithm-title">Algorithm 1: AnyBipe Framework Process</div>
+                        <div class="algorithm-step">
+                            <b>Pre-requisites:</b> URDF model O, training environment 𝒯, deployment environment ℛ,
+                            robot state tracker st
+                        </div>
+                        <div class="algorithm-step">
+                            <b>Require:</b> Environment description 𝒟(𝒯), prompt set p, training environment estimator
+                            ℰ<sub>train</sub>, homomorphic estimator mapping function ℱ, safety evaluation criterion SA.
+                            RL algorithm RL, LLM model LLM, feedback prompt compiler COMPILE
+                        </div>
+                        <div class="algorithm-step">
+                            <b>Optional:</b> Human-engineered reward function 𝑅<sub>ref</sub>, reference policy
+                            π<sub>ref</sub>, additional prompts p<sub>add</sub>, custom environment observation
+                            obs<sub>c</sub>
+                        </div>
+                        <div class="algorithm-step">
+                            <b>Hyperparameters:</b> Iteration N, number of reward candidates K, best sample percentage
+                            c<sub>bs</sub>, teacher model coefficient β, environment estimator coefficient
+                            c<sub>e</sub>, observation coefficient c<sub>obs</sub>
+                        </div>
+                        <div class="algorithm-step">
+                            <b>Input:</b> Task description 𝒟
+                        </div>
+                        <div class="algorithm-step">
+                            𝑅<sub>ref</sub> &larr; <b>if</b> pre-defined <b>then</b> reference reward <b>else</b> None
+                        </div>
+                        <div class="algorithm-step">
+                            <b>For</b> i &larr; 1 <b>to</b> N <b>do</b>:
+                            <div class="algorithm-step">
+                                <span class="comment">/* Module 1: Reward Function Generation */</span>
+                                <div class="algorithm-step">p<sub>in</sub> &larr; p + p<sub>add</sub> +
+                                    p<sub>feedback</sub></div>
+                                <div class="algorithm-step">𝑅 &larr; LLM(𝒟, 𝒟(𝒯), p<sub>in</sub>, 𝑅<sub>ref</sub>)
+                                </div>
+
+                                <span class="comment">/* Module 2: Teacher-Guided RL Training */</span>
+                                <div class="algorithm-step">Π, Obs &larr; RL(𝒯, O, 𝑅, π<sub>ref</sub>, β)</div>
+
+                                <span class="comment">/* Module 3: Deployment, Evaluation, and Feedback */</span>
+                                <div class="algorithm-step">n<sub>bs</sub> &larr; &lceil;c<sub>bs</sub> &middot;
+                                    K&rceil;</div>
+                                <div class="algorithm-step">p<sub>feedback</sub> &larr; None</div>
+                                <div class="algorithm-step">Criterion &larr; c<sub>e</sub> &middot; ℰ<sub>train</sub>(Π)
+                                    + Σc<sub>obs</sub> &middot; Obs</div>
+                                <div class="algorithm-step">𝑅<sub>bs</sub>, π<sub>bs</sub> &larr;
+                                    argmax<sub>Criterion</sub>(𝑅, Π)</div>
+                                <div class="algorithm-step">𝑅̂<sub>bs</sub> &larr; ℱ(𝑅<sub>bs</sub>)</div>
+
+                                <b>For all</b> π, 𝑅̂ <b>in</b> π<sub>bs</sub>, 𝑅̂<sub>bs</sub>:
+                                <div class="algorithm-step">
+                                    π<sub>real</sub> &larr; (𝒯 &rarr; ℛ)(π)<br>
+                                    ℰ<sub>sim</sub> &larr; EVAL<sub>gazebo</sub>(𝑅̂(st(O)), π<sub>real</sub>)<br>
+                                    p<sub>feedback</sub> +&equals; COMPILE(p, ℰ<sub>sim</sub>)
+                                </div>
+
+                                <b>If</b> SA(ℰ<sub>sim</sub>) <b>is true</b>:
+                                <div class="algorithm-step">
+                                    ℰ<sub>real</sub> &larr; EVAL<sub>real</sub>(𝑅̂(st(O)), π<sub>real</sub>)<br>
+                                    p<sub>feedback</sub> +&equals; COMPILE(p, ℰ<sub>real</sub>)
+                                </div>
+                            </div>
+
+                            𝑅<sub>ref</sub>, π<sub>ref</sub> &larr; argmax<sub>Criterion</sub>(𝑅<sub>bs</sub>,
+                            π<sub>bs</sub>)<br>
+                            p<sub>feedback</sub> +&equals; COMPILE(p, π<sub>ref</sub>)
+                        </div>
+                        <div class="algorithm-step">
+                            <b>Output:</b> Best policy π, best deployment π<sub>real</sub>, and best reward function 𝑅
+                        </div>
+                    </div>
+
+
+
+
+                    <h3>Module 1: LLM Guided Reward Function Design</h3>
+                    <p>We enhance the reward function design using the Eureka framework, which enables LLMs to
+                        autonomously improve and iterate reward functions with predefined environmental and task
+                        descriptions \(\mathcal{D}(\mathcal{T})\). However, initial usability issues require multiple
+                        iterations for viable training code. Furthermore, Eureka often overlooks discrepancies between
+                        training \(\mathcal{T}\) and real environments \(\mathcal{R}\), resulting in computationally
+                        expensive but minimally effective reward functions that may induce undefined behaviors. The
+                        framework also lacks comprehensive safety considerations for tasks such as bipedal movement,
+                        despite attempts to integrate safety through Reward-Aware Physical Priors (RAPP) and LLM-led
+                        Domain Randomization.</p>
+
+                    <p>To address key issues, we developed a robust context establishment mechanism that effectively
+                        tackles underdesigned reward functions and safety constraints. Our approach classifies prompts
+                        into two categories: General and Task-Specific. For general tasks, we provide coding tips,
+                        function templates, and predefined templates that facilitate code compilation, training
+                        feedback, and testing feedback. We also integrate reference tables from Isaac Gym for precise
+                        measurements like motor torque, torque limits, and foot height, which are crucial for
+                        maintaining realistic task parameters. These tables prevent the customization of non-existent
+                        observations and enhance the utilization of environmental variables in
+                        \(\mathcal{D}(\mathcal{T})\), ensuring that LLMs consider actionable constraints during reward
+                        function design. Our experimental results affirm that LLMs can seamlessly incorporate these
+                        safety restrictions and environmental variables, thus designing highly effective reward
+                        functions, evidencing their exceptional context tracking and directive following capabilities.
+                    </p>
+
+                    <figure>
+                        <img src="static/images/safety_restrictions.png"
+                            alt="Examples of safety restriction prompts (left) against LLM generated reward functions (right)"
+                            style="width:84%">
+                        <figcaption>Examples of safety restriction prompts (left) against LLM generated reward functions
+                            (right)</figcaption>
+                    </figure>
+
+                    <p>Furthermore, the Task-Specific module allows users to define custom prompts for specific tasks,
+                        facilitating the rapid generation of viable code and standardization of reward calculations.
+                        Users have the flexibility to use trainable artificial reward functions as templates or employ
+                        various computational paradigms to enhance the accuracy and applicability of reward assessments.
+                    </p>
+
+                    <p>To refine the evaluation of designed reward functions for completing the improvement loop, we
+                        introduced a comprehensive reward function evaluation scheme. This scheme not only tracks
+                        changes in rewards and observations throughout the training but also integrates a homomorphic
+                        evaluation model to closely assess real-world robot performance. This model ensures a high
+                        correlation between real-world outcomes and theoretical reward functions, enabling LLMs to
+                        intuitively identify the most impactful components of the reward functions. Details on this
+                        model are expounded in Section 3.3, showcasing our commitment to precise and practical feedback
+                        mechanisms that enhance real-world applicability.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -333,89 +694,126 @@
         <div class="hero-body">
             <div class="container">
                 <div class="content">
-                    <h2 class="subtitle has-text-centered">
-                        Title of the Section
-                    </h2>
-                    <p class="has-text-justified">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ac odio bibendum
-                        gravida. Vestibulum imperdiet tincidunt mi, eget vulputate augue cursus id. Vivamus at nisi sit
-                        amet turpis cursus varius a ut orci. Suspendisse potenti. Integer nec scelerisque ipsum. Nullam
-                        ut magna leo. Cras laoreet, felis id vehicula scelerisque, nulla arcu gravida urna, nec tempus
-                        nunc magna nec elit. Phasellus tincidunt ante ac velit finibus, non venenatis erat suscipit. Sed
-                        eu justo erat. Proin accumsan velit non mi ultrices feugiat. Aliquam erat volutpat. Sed at enim
-                        a velit consequat hendrerit. Aenean ac arcu sit amet lectus vehicula pretium ac a nunc. Nam
-                        varius velit sit amet nisl varius, a dictum nulla placerat.
+                    <h3>Module 2: RL Training Adopting Reference Policy as Teacher</h3>
+
+                    <p>In this section, we detail the adaptations applied to guide RL training towards desired actions
+                        using frameworks provided by Legged Gym<sup><a
+                                href="https://github.com/leggedrobotics/legged_gym">1</a></sup>, employing the Proximal
+                        Policy Optimization (PPO) algorithm as our foundation. We assume the existence of a baseline
+                        policy \( \pi_{\text{ref}} \), which could be derived from traditional control methods or
+                        previous RL techniques.</p>
+
+                    <p>To enhance the PPO algorithm, we modify the objective function given below:</p>
+
+                    <p>
+                        \[
+                        \begin{aligned}
+                        L^{\text{CLIP}}(\theta) = & \hat{\mathbb{E}}_t [\min(r_t(\theta) \hat{A}_t,
+                        \text{clip}(r_t(\theta), 1 - \epsilon, 1 + \epsilon) \hat{A}_t) \\
+                        &+\beta \operatorname{KL}[\pi_{\text{ref}}(\cdot | s_t), \pi_{\theta}(\cdot | s_t)]],
+                        \end{aligned}
+                        \]
                     </p>
-                    <p class="has-text-justified">
-                        Mauris luctus malesuada lectus vel pharetra. Ut luctus consequat justo, at scelerisque nisi
-                        dignissim vel. In non magna vitae orci malesuada gravida. Sed pharetra nec erat id laoreet.
-                        Suspendisse ultricies dapibus diam, non congue erat faucibus a. Duis fermentum malesuada felis
-                        vel dictum. Integer nec sodales nunc. Aenean sit amet lectus et ligula iaculis dignissim ac non
-                        quam. Donec tincidunt orci risus, at tincidunt felis scelerisque nec.
+
+                    <p>where \( r_t(\theta) = \frac{\pi_\theta(a_t | s_t)}{\pi_{\theta_{old}}(a_t | s_t)} \) denotes the
+                        probability ratio, \( \hat{A}_t \) is an estimator of the advantage at time \( t \), \( \epsilon
+                        \) is a small positive number, and \( \beta \) is a coefficient that measures the divergence
+                        between the reference policy and PPO policy.</p>
+
+                    <p>This integration enables control over the similarity between the trained policy and the reference
+                        policy. However, abstracting the reference policy \( \pi_{\text{ref}} \) into the same
+                        probabilistic framework as the PPO policy presents challenges. Despite this, given the
+                        deterministic nature of actions \( a_t \) for a specific state \( s \) and previous action \(
+                        a_{t-1} \), and assuming sufficient environmental observations, we can approximate the
+                        distribution \( \pi_{\text{ref}} \) as a Dirac distribution, and the differences between \( \pi
+                        \) and \( \pi_{\text{ref}} \) can be described as follows:</p>
+
+                    <p>
+                        \[
+                        \begin{aligned}
+                        \hat{\mathbb{E}}_t\left[\operatorname{KL}( \pi_{\text{ref}}, \pi_{\theta})\right] \approx
+                        \frac{1}{N}\sum_{i=1}^N \left[\log(\sqrt{2\pi \sigma_{\theta,i}^2}) + \frac{(a_{ref} -
+                        \mu_{\theta,i})^2}{2\sigma_{\theta,i}^2}\right].
+                        \end{aligned}
+                        \]
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End long text section -->
+
+                    <p>The approximation uses the integral properties of the Dirac function and expression of KL
+                        divergence, which is omitted due to space constraints. With adequate observations, this
+                        approximation becomes reliable. This improvement can effectively prevent reinforcement learning
+                        from falling into a degradation trap or a local optimal solution.</p>
+
+                    <p>In the <i>AnyBipe</i> framework, we have established a template for deploying existing policies
+                        as teacher functions, demonstrating integration of models deployed using PyTorch, ONNX, and
+                        traditional control algorithms implemented in C++ into our framework. This will allow users to
+                        transfer previous work to current work, or introduce pre-trained policies for simple tasks to
+                        accelerate the convergence of policies on complex tasks.</p>
 
 
-
-    <div class="content">
-        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
-            <br>
-            Module 2: Teacher Guided PPO Training
-        </h1>
-    </div>
+                    <h4><br>Proof of this section (section 3.2 in the paper)</h4>
 
 
+                    <p>We have KL divergence between normal distribution \( N(\mu_{\theta}, \sigma_{\theta}^2) \) with
+                        PDF \( q(x) =
+                        \frac{1}{\sqrt{2\pi\sigma_{\theta}^2}}\exp\left(-\frac{(x-\mu_{\theta})^2}{\sigma_{\theta}^2}\right)
+                        \), and Dirac distribution with PDF \( p(x) = \delta(x-a_{ref}) \), the KL divergence can be
+                        written as</p>
 
-    <!-- Long text section -->
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container">
-                <div class="content">
-                    <p class="has-text-justified">
+                    <p>
+                        \[
+                        \begin{aligned}
+                        \operatorname{KL}(\pi_{\text{ref}}\mid \pi_{\theta}) &=
+                        \int_{-\infty}^{\infty}p(x)\log\frac{p(x)}{q(x)}dx\\
+                        & = \int_{-\infty}^{\infty}\delta(x)\log
+                        \delta(x)dx-\int_{-\infty}^{\infty}\delta(x-a_{ref})\log q(x)dx\\
+                        & = 0 - \log q(a_{ref})\\
+                        & = \log(\sqrt{2\pi \sigma_{\theta}^2}) + \frac{(a_{ref} - \mu_{\theta})^2}{2\sigma_{\theta}^2}
+                        \end{aligned}
+                        \]
+                    </p>
 
-<h2>Proof of section 3.2</h2>
+                    <p>We first prove that \( \int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx=0 \). Let \( u =
+                        \log\delta(x) \), \( v = \int \delta(x)dx = \mathbb{1}(x) \), where \( \mathbb{1} \) is the step
+                        function, we have</p>
 
-<p>First, let \( u = \log\delta(x) \), therefore we have \( du = \frac{d}{dx}\log\delta(x) \).</p>
+                    <p>
+                        \[
+                        \begin{aligned}
+                        m(x):=\int\delta(x)\log \delta(x)dx&= \int u dv\\
+                        &= uv - \int vdu \\
+                        &= \left\{\begin{aligned}
+                        & 0\cdot u - \int 0 \cdot du =0, &x < 0,\\ & \log\delta(0), & x=0,\\ &=u - \int 1\cdot du=0, &
+                            x> 0.
+                            \end{aligned}\right.\\
+                            \end{aligned}
+                            \]
+                    </p>
 
-<p>We have KL divergence between normal distribution \( N(\mu_{\theta}, \sigma_{\theta}^2) \) with PDF \( q(x) = \frac{1}{\sqrt{2\pi\sigma_{\theta}^2}}\exp\left(-\frac{(x-\mu_{\theta})^2}{\sigma_{\theta}^2}\right) \), and Dirac distribution with PDF \( p(x) = \delta(x-a_{ref}) \), the KL divergence can be written as</p>
+                    <p>Therefore we can approximately say that \( \int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx =
+                        m(\infty) - m(-\infty)=0 \)</p>
 
-$$
-\begin{aligned}
-\operatorname{KL}(\pi_{\text{ref}}\mid \pi_{\theta}) &= \int_{-\infty}^{\infty}p(x)\log\frac{p(x)}{q(x)}dx\\
-&= \int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx-\int_{-\infty}^{\infty}\delta(x-a_{ref})\log q(x)dx\\
-&= 0 - \log q(a_{ref})\\
-&= \log(\sqrt{2\pi \sigma_{\theta}^2}) + \frac{(a_{ref} - \mu_{\theta})^2}{2\sigma_{\theta}^2}
-\end{aligned}
-$$
+                    <p>Then we show why we don't calculate the normal KL divergence \(
+                        \operatorname{KL}(\pi_{\theta}\mid \pi_{\text{ref}}) \). This is because the term</p>
 
-<p>We first prove that \( \int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx = 0 \). Let \( u = \log\delta(x) \), \( v = \int \delta(x)dx = 1 \), we have</p>
+                    <p>
+                        \[
+                        \int_{-\infty}^{\infty}p(x)\log\delta(x)dx
+                        \]
+                    </p>
 
-$$
-\begin{aligned}
-\int_{-\infty}^{\infty}\delta(x)\log \delta(x)dx &= \int_{-\infty}^{\infty}udv \\
-&= uv - \int_{-\infty}^{\infty}vdu \\
-&= u - \int_{-\infty}^{\infty}du \\
-&= 0
-\end{aligned}
-$$
+                    <p>is \( -\infty \), there is no way for normal calculation. Since the backward propagation
+                        functions normally, we choose the inverse form, which approximately measures the difference
+                        between two distributions.</p>
 
-<p>Then we show why we don't calculate the normal KL divergence \( \operatorname{KL}(\pi_{\theta}\mid \pi_{\text{ref}}) \). This is because the term</p>
+                    <p>Also, in practice, we tend to ignore the term which controls the size of \( \sigma_{\theta} \),
+                        using this term directly instead:</p>
 
-$$
-\int_{-\infty}^{\infty}p(x)\log\delta(x)dx
-$$
+                    <p>
+                        \[
+                        L_{dist} =\sum_{i=1}^N\frac{(a_{ref} - \mu_{\theta,i})^2}{2\sigma_{\theta,i}^2}
+                        \]
+                    </p>
 
-<p>is too difficult to calculate. Since the backward propagation functions normally, we choose the inverse form, which still measures the difference between two distributions.</p>
-
-<p>Also, in practice, we tend to ignore the term which controls the size of \( \sigma_{\theta} \), using this term directly instead:</p>
-
-$$
-L_{dist} =\sum_{i=1}^N\frac{(a_{ref} - \mu_{\theta,i})^2}{2\sigma_{\theta,i}^2}
-$$
                 </div>
             </div>
         </div>
@@ -423,47 +821,9 @@ $$
     <!-- End Proof 3.2 -->
 
 
-    <!-- Long text section -->
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container">
-                <div class="content">
-                    <h2 class="subtitle has-text-centered">
-                        Title of the Section
-                    </h2>
-                    <p class="has-text-justified">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ac odio bibendum
-                        gravida. Vestibulum imperdiet tincidunt mi, eget vulputate augue cursus id. Vivamus at nisi sit
-                        amet turpis cursus varius a ut orci. Suspendisse potenti. Integer nec scelerisque ipsum. Nullam
-                        ut magna leo. Cras laoreet, felis id vehicula scelerisque, nulla arcu gravida urna, nec tempus
-                        nunc magna nec elit. Phasellus tincidunt ante ac velit finibus, non venenatis erat suscipit. Sed
-                        eu justo erat. Proin accumsan velit non mi ultrices feugiat. Aliquam erat volutpat. Sed at enim
-                        a velit consequat hendrerit. Aenean ac arcu sit amet lectus vehicula pretium ac a nunc. Nam
-                        varius velit sit amet nisl varius, a dictum nulla placerat.
-                    </p>
-                    <p class="has-text-justified">
-                        Mauris luctus malesuada lectus vel pharetra. Ut luctus consequat justo, at scelerisque nisi
-                        dignissim vel. In non magna vitae orci malesuada gravida. Sed pharetra nec erat id laoreet.
-                        Suspendisse ultricies dapibus diam, non congue erat faucibus a. Duis fermentum malesuada felis
-                        vel dictum. Integer nec sodales nunc. Aenean sit amet lectus et ligula iaculis dignissim ac non
-                        quam. Donec tincidunt orci risus, at tincidunt felis scelerisque nec.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End long text section -->
-
-    <div class="content">
-        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
-            <br>
-            Module 3: Deploy, Evaluation, and Feedback
-        </h1>
-    </div>
-
 
     <!-- Long text section -->
-    <section class="hero is-small">
+    <!-- <section class="hero is-small">
         <div class="hero-body">
             <div class="container">
                 <div class="content">
@@ -490,9 +850,67 @@ $$
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End long text section -->
 
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="content">
+                    <p class="has-text-justified">
+
+                    <h3>Module 3: Deployment, Evaluation, and Feedback</h3>
+
+                    <p>In this section, we discuss optimal strategy selection, state estimator implementations, and
+                        methods to align evaluation with reward functions, leading to refined strategy generation by
+                        LLMs.</p>
+
+                    <p>To shield our data from ineffective reward functions, we define essential training metrics—like
+                        command compliance and survival duration—as basic measurements \( \mathfrak{E}_{train} \),
+                        filtering samples that meet these benchmarks. For specific tasks such as bipedal stair climbing
+                        or standing, customization of observational metrics \( Obs_c \) and coefficients \( c_{obs} \)
+                        is enabled in configuration files. We then select the top 15% of strategies for real-world
+                        deployment, prioritizing those that maximize combined metrics:</p>
+
+                    <p>
+                        \[
+                        \mathbf{R}_{bs}, \Pi_{bs} = \text{argmax}_{n_{obs}} c_{e} \cdot \mathfrak{E}_{train}(\Pi) + \sum
+                        c_{obs} \cdot \operatorname{Obs}_c.
+                        \]
+                    </p>
+
+                    <p>Strategies are deployed in a ROS-based robotic framework \( \mathcal{R} \) using ONNX. Given that
+                        the training \( \mathcal{T} \) and real environments \( \mathcal{R} \) are isomorphic, we define
+                        a homomorphism \( \mathcal{F}: \mathcal{T} \to \mathcal{R} \), ensuring the real-world
+                        evaluation metric \( \hat{\mathbf{R}} = \mathcal{F}(\mathbf{R}) \) mirrors the reward function.
+                        Our automated script aligns reward structures with observed real-world data, informing users of
+                        any mismatches.</p>
+
+                    <!-- <p><strong>Figure 1:</strong> Homomorphic reward function conversion procedure.</p> -->
+
+                    <p>We also develop a basic state estimator for comprehensive robotic assessments, including metrics
+                        like step width and leg height. Models are first validated in Gazebo to confirm operational
+                        stability, with safety checks aligned with safety regulations proposed earlier. Successful
+                        models undergo real-world testing, with optimal models selected based on:</p>
+
+                    <p>
+                        \[
+                        \begin{aligned}
+                        &R_{best},\pi_{best} = \\&\text{argmax}\left[ [\mathcal{F}(\mathbf{R}_{bs})_{gazebo} +
+                        \mathcal{F}(\mathbf{R}_{bs})_{real}](\mathcal{T} \to \mathcal{R})(\Pi_{bs})\right].
+                        \end{aligned}
+                        \]
+                    </p>
+
+                    <p><i>AnyBipe</i> enables an autonomous cycle from reward function generation to training,
+                        deployment, and optimization, facilitating user-driven training of bipedal robot RL algorithms
+                        without pre-existing strategies.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -504,13 +922,13 @@ $$
                 <div class="item">
 
                     <div class="content">
-                        <h2 class="subtitle has-text-centered">
-                            Reward Function Conversion
-                        </h2>
+                        <h3 class="subtitle has-text-centered">
+                            Homomorphic reward function conversion procedure
+                        </h3>
                     </div>
 
                     <!-- Your image here -->
-                    <img src="static/images/homomorphic_conv.png" alt="MY ALT TEXT" />
+                    <img src="static/images/homomorphic_conv.png" alt="homomorphic_conv" />
                 </div>
             </div>
         </div>
@@ -545,71 +963,71 @@ $$
             <div class="container">
 
                 <div class="content">
-                    <h2 class="subtitle has-text-centered">
-                        Feedback Visualized
-                    </h2>
+                    <h3 class="subtitle has-text-centered">
+                        Example Feedback Visualized
+                    </h3>
                 </div>
                 <div class="small-image">
                     <div id="results-carousel" class="carousel results-carousel">
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/feet_state.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/feet_state.png" alt="feet_state" />
                             <h2 class="subtitle has-text-centered">
                                 Feet State
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/gt_imu_acc.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/gt_imu_acc.png" alt="gt_imu_acc" />
                             <h2 class="subtitle has-text-centered">
                                 Ground-Truth IMU Acceleration
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/gt_imu_ang.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/gt_imu_ang.png" alt="gt_imu_ang" />
                             <h2 class="subtitle has-text-centered">
                                 Ground-Truth IMU Angle
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/gt_imu_ang_vel.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/gt_imu_ang_vel.png" alt="gt_imu_ang_vel" />
                             <h2 class="subtitle has-text-centered">
                                 Ground-Truth IMU Angle Velocity
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/gt_imu_pos.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/gt_imu_pos.png" alt="gt_imu_pos" />
                             <h2 class="subtitle has-text-centered">
                                 Ground-Truth IMU Position
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/state_angl.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/state_angl.png" alt="state_angl" />
                             <h2 class="subtitle has-text-centered">
                                 State Angle
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/state_vel.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/state_vel.png" alt="state_vel" />
                             <h2 class="subtitle has-text-centered">
                                 State Velocity
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/gt_imu_vel.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/gt_imu_vel.png" alt="gt_imu_vel" />
                             <h2 class="subtitle has-text-centered">
                                 GT IMU Velocity
                             </h2>
                         </div>
                         <div class="item">
                             <!-- Your image here -->
-                            <img src="static/images/eval_exported_data/state_dq.png" alt="MY ALT TEXT" />
+                            <img src="static/images/eval_exported_data/state_dq.png" alt="state_dq" />
                             <h2 class="subtitle has-text-centered">
                                 State DQ
                             </h2>
@@ -622,186 +1040,246 @@ $$
     <!-- End image carousel -->
 
 
-
-
-
-    <!-- Image carousel -->
+    <!-- Long text section -->
     <section class="hero is-small">
         <div class="hero-body">
             <div class="container">
-
                 <div class="content">
                     <h2 class="subtitle has-text-centered">
-                        Expreiment Highlights
+                        Experiments
                     </h2>
+
+                    <p>Our experiments were conducted on a six-degree-of-freedom bipedal robot from Limx Dynamics, shown
+                        in Fig. 1. GPT-4o was selected as the LLM base, with training performed on an NVIDIA GTX 3090Ti.
+                        We explored the robot's locomotion on both flat and complex terrains over multiple experimental
+                        rounds. This section highlights key experiments on individual modules and overall traininimg g
+                        effectiveness. Due to space limitations, only critical results are presented here, with detailed
+                        data and charts available on our GitHub page.</p>
+
+
+                    <div style="text-align: center;">
+                        <img src="static/images/dof.png" alt="dof" style="width:80%" />
+                        <p><strong>Figure 1:</strong> Limx robot and DOF definitions.</p>
+                    </div>
+
+                    <p>Table 1 outlines key reward functions that maintain the same structure across both
+                        human-engineered and <i>AnyBipe</i>-generated rewards, differing only in scale, allowing direct
+                        performance comparison.</p>
+
+                    <table>
+                        <caption><strong>Table 1:</strong> Examples of important rewards</caption>
+                        <thead>
+                            <tr>
+                                <th>Reward Name</th>
+                                <th>Expression Form</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Survival</td>
+                                <td>\( R_{surv}= \int_0^{t_{\text{term},i}} dt \)</td>
+                            </tr>
+                            <tr>
+                                <td>Tracking Linear Velocity</td>
+                                <td>\( R_{vel} = \exp\left(- \frac{\|v-v_{ref}\|^2}{\sigma_{l}^2}\right) \)</td>
+                            </tr>
+                            <tr>
+                                <td>Tracking Angular Velocity</td>
+                                <td>\( R_{angl}=\exp\left(- \frac{\|\omega-\omega_{ref}\|^2}{\sigma_{a}^2}\right) \)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Success</td>
+                                <td>\( R_{succ} = R_{surv} \cdot (c_{l} R_{vel} + R_{angl}) \)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Module Analysis</h3>
+
+                    <p>We evaluated each module by testing prompt design and various augmentations using gpt-3.5-turbo,
+                        gpt-4, and gpt-4o with \( N=16 \) samples per batch. Success rates—defined as the proportion of
+                        samples processed successfully in the first iteration—were compared across four configurations:
+                        basic prompts, prompts with code references, safety regulations, and both. Figure 2 shows that
+                        adding code references and safety regulations improves LLM performance in generating usable
+                        reward functions. As gpt-4 and gpt-4o show similar performance with complete prompts, gpt-4o is
+                        recommended as the primary model.</p>
+
+
+
+                    <div style="text-align: center;">
+                        <img src="static/images/success_rate.png" alt="dof" style="width:80%" />
+                        <p><strong>Figure 2:</strong> Success rate for LLM generated reward functions.</p>
+                    </div>
+
+                    <p>We validated the effect of incorporating safety regulations into reward functions by comparing
+                        models with and without safety prompts in Isaac Gym and Gazebo environments. Figure 3 shows the
+                        operational postures and IMU spatial angles of safe models (c)(d) versus unsafe models (a)(b).
+                        Results indicate that, even without real-world feedback, safety prompts effectively constrain
+                        robot behavior, supporting practical deployment.</p>
+
+
+                    <div style="text-align: center;">
+                        <img src="static/images/crop_fig3.png" alt="crop_fig3" style="width:180%" />
+                        <p><strong>Figure 3:</strong> Model behavior with and without safety regulation prompts.</p>
+                        <br>
+                    </div>
+
+                    <p>We evaluated teacher-guided models under artificial reward functions, training each for 5,000
+                        iterations on complex terrain. The original model used only an artificial reward function, while
+                        the teacher-guided model was instructed by an operational ONNX model with \( \beta = 5.0 \).
+                        Performance was measured using <i>reward success</i> and <i>terrain level</i>. Results showed
+                        that the teacher-guided model had more stable training, with faster and less volatile reward
+                        growth.</p>
+
+
+                    <div style="text-align: center;">
+                        <img src="static/images/reward_success.png" alt="reward_success" style="width:80%" />
+                        <p><strong>Figure 4:</strong> Reward success, terrain level for teacher guided and original RL
+                    </div>
+                    training with human-engineered rewards.</p>
+
+                    <h3>Homomorphic Evaluation</h3>
+
+                    <p>For the Homomorphic evaluation part, Table 2 shows some evaluation indicators before and after
+                        the conversion, and the evaluation results under the best model. It can objectively reflect some
+                        differences from simulation to reality. Each column represents reward function name, reward in
+                        Isaac Gym, homomorphic measurement in Gazebo, in reality, and the mapped tracking result in
+                        reality (30 seconds of tracking).</p>
+
+                    <table>
+                        <caption><strong>Table 2:</strong> Examples of homomorphic evaluation</caption>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Gym</th>
+                                <th>Gazebo</th>
+                                <th>Reality</th>
+                                <th>Mapping (real/targ)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Track lin vel</td>
+                                <td>56.92</td>
+                                <td>21.93</td>
+                                <td>20.41</td>
+                                <td>0.86 (1.0) m/s</td>
+                            </tr>
+                            <tr>
+                                <td>Track ang vel</td>
+                                <td>36.73</td>
+                                <td>15.60</td>
+                                <td>14.43</td>
+                                <td>0.06 (0.10) rad/s</td>
+                            </tr>
+                            <tr>
+                                <td>Feet distance</td>
+                                <td>-0.31</td>
+                                <td>-0.00</td>
+                                <td>-0.00</td>
+                                <td>\(>0.1\) m (\(>0.1\) m)</td>
+                            </tr>
+                            <tr>
+                                <td>Standing still</td>
+                                <td>-50.35</td>
+                                <td>-6.16</td>
+                                <td>-11.20</td>
+                                <td>5.8 (30) s</td>
+                            </tr>
+                            <tr>
+                                <td>Survival time</td>
+                                <td>0.86</td>
+                                <td>0.30</td>
+                                <td>0.30</td>
+                                <td>30 (30) s</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Framework Analysis</h3>
+
+                    <p>The experimental setup involved first establishing a baseline using a manually designed reward
+                        function. We then trained our model from scratch in flat and complex terrain environments,
+                        simulating the general situation of users first using the <i>AnyBipe</i> framework. The robot
+                        was trained to track speed commands, avoid falls, and walk on various terrains using a
+                        simplified reward function with basic components like velocity tracking, action rate, and
+                        balance judgment, without scale-related information. Over five rounds (\( N=16 \) samples each),
+                        the best model from each round was tested in Gazebo and real-world scenarios. The basic training
+                        framework occupies 7G of GPU memory, and the corresponding training time is 79 hours. Figure 5
+                        shows the deployment results, where initial iterations had issues like excessive movement
+                        (Iteration 0) and unnatural joint postures (Iterations 1 and 2), but these were corrected by
+                        Iteration 5, achieving a natural gait.</p>
+
+                    <div style="text-align: center;">
+                        <div style="text-align: center;"></div>
+                        <img src="static/images/exp1.png" alt="exp1" style="width:80%" />
+                    </div>
+                    <p><strong>Figure 5:</strong> Deployment results for complex terrain locomotion tasks.</p>
                 </div>
-                <div id="results-carousel" class="carousel results-carousel">
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            First image description.
-                        </h2>
-                    </div>
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            Second image description.
-                        </h2>
-                    </div>
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            Third image description.
-                        </h2>
-                    </div>
-                    <div class="item">
-                        <!-- Your image here -->
-                        <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-                        <h2 class="subtitle has-text-centered">
-                            Fourth image description.
-                        </h2>
-                    </div>
+
+                <p>To demonstrate the effectiveness of the LLM's reward function improvements during training, we
+                    evaluate its performance using <i>reward success</i> and <i>terrain level</i> in tasks like
+                    velocity tracking, safe walking, and navigating complex terrains. After comparing five
+                    iterations with manually designed reward functions in Figure 6, we found that the LLM's reward
+                    function outperformed the manual version after just two iterations. Each subsequent iteration
+                    further enhanced training speed and performance, all achieved without human intervention.</p>
+
+
+                <div style="text-align: center;">
+                    <img src="static/images/reward_final.png" alt="reward_final" style="width:80%" />
                 </div>
+
+                <p><strong>Figure 6:</strong> Reward success, terrain level for different iterations in complex
+                    locomotion training, compared with human-engineered rewards.</p>
+                <br>
+            </div>
+
+            <p>To verify that the final trained policy not only performs well in the lab but also adapts to
+                real-world terrains, we conducted walking tests across five different surfaces: the experimental
+                site, carpet, hard ground, grass, and stairs. The experiments demonstrated that the model
+                trained and deployed by <i>AnyBipe</i> possesses the ability to walk on various terrains. In
+                contrast, the manually designed reward function used in the experiment failed to achieve
+                Sim-to-real transfer, indicating that <i>AnyBipe</i> can independently resolve the Sim-to-real
+                problem.</p>
+
+
+            <div style="text-align: center;">
+                <img src="static/images/terrians.png" alt="reward_final" style="width:80%" />
+            <p><strong>Figure 7:</strong> Experiments conducted on different terrains, adopting <i>AnyBipe</i>
+                best policy.</p>
             </div>
         </div>
+
+        </div>
+        </div>
+        </div>
     </section>
-    <!-- End image carousel -->
+    <!-- End long text section -->
 
 
 
-    <div class="content">
-        <h1 class="subtitle" style="text-align: left; padding-left: 60px;">
-            <br>
-            The following are templates to be deleted
-        </h1>
-    </div>
-
-    <!-- Code block with horizontal scrolling -->
+    <!-- Long text section -->
     <section class="hero is-small">
         <div class="hero-body">
             <div class="container">
-
                 <div class="content">
                     <h2 class="subtitle has-text-centered">
-                        Code Transformation
+                        Conclusion
                     </h2>
-                </div>
-                <div id="code-block-carousel" class="carousel code-carousel">
-                    <div class="item">
-                        <pre class="code-block">
-<code>
-// First code snippet1
-function greet() {
-    console.log("Hello, World!");
-}
-greet();
-</code>
-          </pre>
-                    </div>
-                    <div class="item">
-                        <pre class="code-block">
-<code>
-// Second code snippet
-let array = [1, 2, 3, 4, 5];
-array.forEach(item => console.log(item));
-</code>
-          </pre>
-                    </div>
-                    <div class="item">
-                        <pre class="code-block">
-<code>
-// Third code snippet
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    introduce() {
-        console.log(`My name is ${this.name} and I am ${this.age} years old.`);
-    }
-}
-const person = new Person("Alice", 30);
-person.introduce();
-</code>
-          </pre>
-                    </div>
+                    <p class="has-text-justified">
+<i>AnyBipe</i> proposes an end-to-end framework for training and deploying bipedal robots, which utilizes a state-of-the-art LLM to design reward functions for specific tasks. The framework provides interfaces that allow users to supply reward references and integrate pre-existing models to assist in training. Additionally, it incorporates feedback from both simulated and real-world test results, enabling the execution of training-to-deployment tasks entirely without human supervision. We validated the effectiveness of each module, as well as the system's ability to guide the robot in learning locomotion in both simple and complex environments, continuously improving the model by either designing new reward functions from scratch or refining existing ones. Furthermore, this framework exhibits potential for transferability to other robotic task planning scenarios. Our future work will focus on improving the current framework in three key areas: first, extending it to a broader range of robotic applications to verify its generalizability; second, testing its effectiveness across more tasks beyond locomotion; and third, enhancing the model evaluation process by incorporating image capture and VLM to achieve more comprehensive state estimation.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Youtube video -->
-    <section class="hero is-small is-light">
-        <div class="hero-body">
-            <div class="container">
-                <!-- Paper video. -->
-                <h2 class="title is-3">Video Presentation</h2>
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-
-                        <div class="publication-video">
-                            <!-- Youtube embed code here -->
-                            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"
-                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End youtube video -->
-
-
-    <!-- Video carousel -->
-    <section class="hero is-small">
-        <div class="hero-body">
-            <div class="container">
-                <h2 class="title is-3">Another Carousel</h2>
-                <div id="results-carousel" class="carousel results-carousel">
-                    <div class="item item-video1">
-                        <video poster="" id="video1" autoplay controls muted loop height="100%">
-                            <!-- Your video file here -->
-                            <source src="static/videos/carousel1.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-video2">
-                        <video poster="" id="video2" autoplay controls muted loop height="100%">
-                            <!-- Your video file here -->
-                            <source src="static/videos/carousel2.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item item-video3">
-                        <video poster="" id="video3" autoplay controls muted loop height="100%">\
-                            <!-- Your video file here -->
-                            <source src="static/videos/carousel3.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End video carousel -->
+    <!-- End long text section -->
 
 
 
 
 
-
-    <!-- Paper poster -->
-    <section class="hero is-small is-light">
-        <div class="hero-body">
-            <div class="container">
-                <h2 class="title">Poster</h2>
-
-                <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
-                </iframe>
-
-            </div>
-        </div>
-    </section>
-    <!--End paper poster -->
 
 
     <!--BibTex citation -->
