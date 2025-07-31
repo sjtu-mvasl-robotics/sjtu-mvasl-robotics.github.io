@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>GBC Documentation Blog</title>
+        <link>https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog</link>
+        <description>GBC Documentation Blog</description>
+        <lastBuildDate>Thu, 31 Jul 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[GBC Project Will Soon be Available!]]></title>
+            <link>https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-pre-open-source</link>
+            <guid>https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-pre-open-source</guid>
+            <pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[We're excited to announce that the GBC (Generalized Behavior Cloning Framework) is in its final stages of preparation for public release! 🎉]]></description>
+            <content:encoded><![CDATA[<p>We're excited to announce that the <strong>GBC (Generalized Behavior Cloning Framework)</strong> is in its final stages of preparation for public release! 🎉</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-current-status">📋 Current Status<a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-pre-open-source#-current-status" class="hash-link" aria-label="📋 Current Status的直接链接" title="📋 Current Status的直接链接">​</a></h2>
+<p>Our team is currently conducting comprehensive <strong>code review, refinement, and debugging</strong> to ensure the highest quality open-source release. We want to make sure that when GBC becomes available, it's ready for researchers and developers worldwide to use effectively.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-release-timeline">🗓️ Release Timeline<a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-pre-open-source#%EF%B8%8F-release-timeline" class="hash-link" aria-label="🗓️ Release Timeline的直接链接" title="🗓️ Release Timeline的直接链接">​</a></h2>
+<p><strong>Target Release Date</strong>: <strong>Before August 10, 2025</strong> 📅</p>
+<p>The complete GBC framework will be available at:
+<strong><a href="https://github.com/sjtu-mvasl-robotics/GBC" target="_blank" rel="noopener noreferrer">https://github.com/sjtu-mvasl-robotics/GBC</a></strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-paper--code-release">📄 Paper &amp; Code Release<a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-pre-open-source#-paper--code-release" class="hash-link" aria-label="📄 Paper &amp; Code Release的直接链接" title="📄 Paper &amp; Code Release的直接链接">​</a></h2>
+<p>The open-source code release is planned to coincide with our research paper publication on arXiv. Both the technical documentation and the complete implementation will be available simultaneously, providing you with:</p>
+<ul>
+<li>📚 <strong>Comprehensive documentation</strong> (like this site!)</li>
+<li>🛠️ <strong>Complete source code</strong> with examples</li>
+<li>🤖 <strong>Robot configuration templates</strong> for multiple platforms</li>
+<li>📖 <strong>Academic paper</strong> with detailed methodology</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-thank-you-for-your-interest">🙏 Thank You for Your Interest!<a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-pre-open-source#-thank-you-for-your-interest" class="hash-link" aria-label="🙏 Thank You for Your Interest!的直接链接" title="🙏 Thank You for Your Interest!的直接链接">​</a></h2>
+<p>We're incredibly grateful for the enthusiasm and interest the robotics community has shown in GBC. Your support motivates us to deliver the best possible framework for humanoid robot learning and motion imitation.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-stay-updated">🔔 Stay Updated<a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-pre-open-source#-stay-updated" class="hash-link" aria-label="🔔 Stay Updated的直接链接" title="🔔 Stay Updated的直接链接">​</a></h2>
+<ul>
+<li>⭐ <strong>Star</strong> our repository: <a href="https://github.com/sjtu-mvasl-robotics/GBC" target="_blank" rel="noopener noreferrer">https://github.com/sjtu-mvasl-robotics/GBC</a></li>
+<li>📖 <strong>Follow</strong> our documentation progress on this site</li>
+<li>🗨️ <strong>Join</strong> our GitHub Discussions for early access to development updates</li>
+</ul>
+<p><strong>The future of humanoid robotics is almost here!</strong> 🤖✨</p>
+<hr>
+<p><em>Stay tuned for the official release announcement!</em></p>]]></content:encoded>
+            <category>News</category>
+            <category>Announcements</category>
+            <category>Open Source</category>
+        </item>
+        <item>
+            <title><![CDATA[GBC Project Documents are Ready to Launch!]]></title>
+            <link>https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready</link>
+            <guid>https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready</guid>
+            <pubDate>Wed, 30 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[We're thrilled to announce that the GBC (Generalized Behavior Cloning Framework) documentation is now complete and ready for the community! 🎉]]></description>
+            <content:encoded><![CDATA[<p>We're thrilled to announce that the <strong>GBC (Generalized Behavior Cloning Framework) documentation</strong> is now complete and ready for the community! 🎉</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-available-now">📖 What's Available Now<a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#-whats-available-now" class="hash-link" aria-label="📖 What's Available Now的直接链接" title="📖 What's Available Now的直接链接">​</a></h2>
+<p>The majority of GBC documentation preparation work has been completed! Our comprehensive documentation suite currently includes:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-complete-user-journey">🛠️ <strong>Complete User Journey</strong><a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#%EF%B8%8F-complete-user-journey" class="hash-link" aria-label="️-complete-user-journey的直接链接" title="️-complete-user-journey的直接链接">​</a></h3>
+<ul>
+<li><strong>📦 Installation Guide</strong> - Step-by-step setup instructions</li>
+<li><strong>⚙️ Configuration Tutorial</strong> - Environment and robot configuration</li>
+<li><strong>🎯 Training Guide</strong> - From basic RL to advanced imitation learning</li>
+<li><strong>🔧 Debugging Manual</strong> - Troubleshooting and optimization tips</li>
+<li><strong>🚀 Deployment Guide</strong> - Real robot deployment strategies</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-comprehensive-api-documentation">📋 <strong>Comprehensive API Documentation</strong><a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#-comprehensive-api-documentation" class="hash-link" aria-label="-comprehensive-api-documentation的直接链接" title="-comprehensive-api-documentation的直接链接">​</a></h3>
+<ul>
+<li><strong>🔍 Complete API Reference</strong> - All interfaces and functions documented</li>
+<li><strong>💡 Code Examples</strong> - Practical usage demonstrations</li>
+<li><strong>🤖 Robot Integration</strong> - Platform-specific configurations</li>
+<li><strong>📊 Training Utilities</strong> - Data processing and evaluation tools</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-coming-next">🚧 What's Coming Next<a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#-whats-coming-next" class="hash-link" aria-label="🚧 What's Coming Next的直接链接" title="🚧 What's Coming Next的直接链接">​</a></h2>
+<p>While our core documentation is complete, we're planning to add advanced tutorials for power users:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-advanced-features-coming-soon">🔮 <strong>Advanced Features (Coming Soon)</strong><a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#-advanced-features-coming-soon" class="hash-link" aria-label="-advanced-features-coming-soon的直接链接" title="-advanced-features-coming-soon的直接链接">​</a></h3>
+<ul>
+<li><strong>👁️ Custom Observation Design</strong> - Define your own observation spaces</li>
+<li><strong>🔄 Custom Symmetry Networks</strong> - Create robot-specific symmetry mappings</li>
+<li><strong>🎭 AMP Integration</strong> - Advanced training with Adversarial Motion Prior</li>
+<li><strong>⚡ Model Distillation</strong> - Create lightweight models for deployment</li>
+<li><strong>🧠 Advanced Training Techniques</strong> - Expert-level optimization strategies</li>
+</ul>
+<p><em>These advanced tutorials will be added as time permits, so stay tuned!</em> ⏰</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-documentation-highlights">🌟 <strong>Documentation Highlights</strong><a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#-documentation-highlights" class="hash-link" aria-label="-documentation-highlights的直接链接" title="-documentation-highlights的直接链接">​</a></h2>
+<p>Our documentation is designed to be:</p>
+<ul>
+<li><strong>📚 Beginner-Friendly</strong> - Start from zero and become an expert</li>
+<li><strong>🎯 Task-Oriented</strong> - Organized by what you want to accomplish</li>
+<li><strong>💻 Code-Rich</strong> - Plenty of examples you can copy and run</li>
+<li><strong>🤖 Robot-Agnostic</strong> - Works with various humanoid platforms</li>
+<li><strong>🔄 Continuously Updated</strong> - Growing with community feedback</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-community-driven">🙏 <strong>Community Driven</strong><a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#-community-driven" class="hash-link" aria-label="-community-driven的直接链接" title="-community-driven的直接链接">​</a></h2>
+<p>This documentation is built for the robotics community, by the community. We encourage:</p>
+<ul>
+<li><strong>🐛 Bug Reports</strong> - Help us improve the docs</li>
+<li><strong>💡 Feature Requests</strong> - Suggest new tutorials</li>
+<li><strong>📝 Contributions</strong> - Share your own examples and tips</li>
+<li><strong>🗨️ Discussions</strong> - Join our community conversations</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-explore-now">🔗 <strong>Explore Now</strong><a href="https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-documentation-ready#-explore-now" class="hash-link" aria-label="-explore-now的直接链接" title="-explore-now的直接链接">​</a></h2>
+<p>The documentation is live and ready for exploration! Whether you're a researcher looking to reproduce results, a developer building new applications, or a student learning about humanoid robotics, you'll find everything you need to get started with GBC.</p>
+<p><strong>Happy Learning!</strong> 🤖📚</p>
+<hr>
+<p><em>The GBC team is committed to making humanoid robot development accessible to everyone. Let's build the future of robotics together!</em></p>]]></content:encoded>
+            <category>News</category>
+            <category>Announcements</category>
+            <category>Documentation</category>
+        </item>
+        <item>
+            <title><![CDATA[GBC Project Blog Test]]></title>
+            <link>https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-test</link>
+            <guid>https://sjtu-mvasl-robotics.github.io/gbc/zh-Hans/blog/gbc-test</guid>
+            <pubDate>Mon, 26 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is just a test.]]></description>
+            <content:encoded><![CDATA[<p>This is just a test.</p>]]></content:encoded>
+            <category>News</category>
+            <category>Announcements</category>
+        </item>
+    </channel>
+</rss>
