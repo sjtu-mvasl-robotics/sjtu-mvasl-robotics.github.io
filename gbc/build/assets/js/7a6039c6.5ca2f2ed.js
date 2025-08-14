@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgbc_documentation=self.webpackChunkgbc_documentation||[]).push([[7094],{6179:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/gbc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
